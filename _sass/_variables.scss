@@ -1,9 +1,18 @@
 // Variables
 // ---------------------------------------/
 
-// colors
-$white:             #fff;
-$black:             #333;
+// Colors
+$background-color: #FAFAFA;
+$light-background-color: lighten($background-color, 1);
+$text-color: #262626;
+$code-color: #bf616a;
+$very-light-grey: darken($background-color, 3);
+$light-grey: darken($background-color, 15);
+$dark-grey: darken($background-color, 30);
+$main-color: #00b0e9;
+$dark-main-color: darken($main-color, 7.5);
 
-// styles
-$text_color:        $black;
+// Typography
+$serif: 'Lora', serif;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$monospace: Menlo, Monaco, "Courier New", monospace;

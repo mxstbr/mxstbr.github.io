@@ -1,2 +1,174 @@
 // Home styles
 // ---------------------------------------/
+
+.title {
+    margin: 1.5em;
+    text-align: center;
+    font-weight: lighter;
+    font-family: Georgia, serif;
+    color: $text-color;
+
+    &:hover {
+        color: $text-color;
+    }
+}
+
+.wrapper {
+    max-width: 56.25em;
+    width: 90%;
+    background-color: $light-background-color;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid $light-grey;
+}
+
+.heading {
+    color: $text-color;
+
+    &--post {
+        font-family: $sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    &__item {
+        margin-top: 0;
+        &:hover {
+            color: $text-color;
+        }
+    }
+
+    &__date {
+        margin-bottom: 0;
+        margin-top: 0;
+        color: $dark-grey;
+    }
+}
+
+.item {
+    padding: 10% 8%;
+    margin: 0 auto;
+    border-bottom: 1px solid $light-grey;
+
+    h1, h2, h3, h4 {
+        font-family: $sans-serif;
+        font-weight: 300;
+    }
+
+    p {
+        max-width: 40em;
+        word-wrap: break-word;
+    }
+
+    &:last-of-type {
+        border-bottom: none!important;
+    }
+}
+
+.btn {
+    position: relative;
+    width: 15em;
+    height: 1em;
+    text-align: left;
+    margin-top: 2em;
+}
+
+.footer {
+    margin: 3em auto;
+    text-align: center;
+    width: 90%;
+    max-width: 56.25em;
+
+    ul {
+        padding: 0;
+    }
+
+    &__item {
+        display: inline;
+        padding: 0.5em;
+        text-transform: lowercase;
+
+        a {
+            color: $light-grey;
+            &:hover {
+                color: $dark-grey;
+            }
+        }
+    }
+}
+
+
+/*
+ * Scrollbubble
+ */
+
+#scrollbubble {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 500;
+    padding: 3px 8px;
+    background-color: $text-color;
+    color: $background-color;
+    border-radius: 3px;
+}
+
+#scrollbubble:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    height: 0;
+    width: 0;
+    margin-top: -4px;
+    border: 4px solid transparent;
+    border-left-color: $text-color;
+}
+
+#instantclick-bar {
+    background: $main-color;
+}
+
+
+/*
+ * Pagination
+ */
+
+.pagination {
+    overflow: hidden; /* clearfix */
+    font-family: $sans-serif;
+    color: $light-grey;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+    display: block;
+    padding: 1em;
+    border: none;
+    transition: background-color 125ms ease-out;
+}
+
+.pagination-item:first-child {
+    border-bottom: 1px solid $light-grey;
+    border-right: none;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+    background-color: $light-grey;
+}
+
+@media (min-width: 30em) {
+    .pagination-item:first-child {
+        margin-bottom: -1px;
+        border-right: 1px solid $light-grey;
+        border-bottom: none;
+    }
+    .pagination-item {
+        float: left;
+        width: 50%;
+    }
+}

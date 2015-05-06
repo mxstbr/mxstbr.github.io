@@ -1,8 +1,9 @@
 # Site settings
-title: "Jekyll Boilerplate"
-description: "site description goes here"
-
-url: "http://yourdomain.com"
+title: "&lt;mxstbr/&gt;"
+url-title: "Max Stoiber"
+description: "Blogging about HTML, CSS, JavaScript and the Web"
+paginate: 1
+url: "http://mxstbr.com"
 
 # Build settings
 markdown: kramdown

@@ -1,20 +1,34 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  {% include head.html %}
+{% for post in paginator.posts %}
+    <div class="item">
+        <a href="{{ site.baseurl }}{{ post.url }}" class="item__link"></a>
+        <h4 class="heading heading--post heading__date">{{ post.date | date_to_long_string }}</h4>
+         <a href="{{ site.baseurl }}{{ post.url }}"><h2 class="heading heading--post heading__item">{{ post.title }}</h2></a>
 
-  <body>
+        {{ post.content | split:'<!--break-->' | first }}
+        {% if post.content contains '<!--break-->' %}
+            <a href="{{ site.baseurl }}{{ post.url }}"><div class="btn btn__read-more">continue reading »</div></a>
+        {% endif %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
     </div>
+{% endfor %}
 
-    {% include footer.html %}
-
-  </body>
-
-</html>
+<div class="pagination">
+    {% if paginator.next_page %}
+        <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">older</a>
+    {% else %}
+        <span class="pagination-item older">older</span>
+    {% endif %}
+    {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+            <a class="pagination-item newer" href="/">newer</a>
+        {% else %}
+            <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">newer</a>
+        {% endif %}
+    {% else %}
+        <span class="pagination-item newer">newer</span>
+    {% endif %}
+</div>
