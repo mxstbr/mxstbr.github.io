@@ -1,0 +1,29 @@
+footer {
+	text-align: center;
+	display: block;
+  	width: 100%;
+  	transition: opacity 250ms ease-in-out;
+  	@include rem(margin-bottom, 1);
+}
+
+footer ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	display: inline-block;
+	@include rem(font-size, 0.7);
+	margin-right: 0.5em;
+	font-family: $sans-serif;
+
+	a {
+		color: $text-color;
+		transition: color 250ms;
+
+		&:hover {
+			color: $main-color;
+		}
+	}
+}

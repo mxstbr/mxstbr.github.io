@@ -4,6 +4,11 @@
 @function em( $fontSize, $contextSize: 16 ) {
   @return 1em * ( $fontSize / $contextSize ); }
 
+@mixin rem($property, $value) {
+    #{$property}: #{$value * 10}px;
+    #{$property}: #{$value}rem;
+}
+
 @function pct( $size, $context ) {
   @return percentage( $size / $context ); }
 
@@ -11,15 +16,6 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
-}
-
-// media querie tools
-@mixin bp($screen_width) {
-  @media (max-width: $screen_width) { @content; }
-}
-
-@mixin bp_main {
-  @media (max-width: 1440px) { @content; }
 }
 
 @mixin sans {
@@ -49,4 +45,12 @@
 @mixin sans_extrabold {
   @include sans;
   font-weight: 800;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
 }

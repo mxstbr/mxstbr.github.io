@@ -7,32 +7,29 @@
 }
 
 html {
-    background-color: $background-color;
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 100%;
 }
 
 body{
     width: 100%;
     height: 100%;
-    background-color: $background-color;
-    color: $text-color;
     font-family: $serif;
-    font-size: 100%;
+    @include rem(font-size, 1);
+    @include rem(line-height, 1.5);
     position: absolute;
     top: 0;
     left: 0;
 }
 
 a {
-    color: $main-color;
     text-decoration: none;
+    outline: none;
     transition: color 125ms ease-out;
 
     &:hover,
     &:focus {
-        color: $dark-main-color;
         text-decoration: none;
     }
 }
@@ -82,8 +79,8 @@ pre {
     font-family: $monospace;
 }
 code {
-    padding: .1em .3em;
-    font-size: 80%;
+    padding: 0em .3em;
+    font-size: 0.8em;
     color: $code-color;
     background-color: $very-light-grey;
     border: 1px solid $light-grey;
@@ -101,12 +98,14 @@ pre {
     word-break: break-all;
     word-wrap: break-word;
     background-color: $very-light-grey;
+    border-radius: 3px;
 }
 pre code {
     padding: 0;
-    font-size: 100%;
     color: inherit;
     background-color: transparent;
+    border: none;
+    letter-spacing: -0.03em;
 }
 
 .highlight {
@@ -149,33 +148,20 @@ blockquote {
 blockquote p:last-child {
     margin-bottom: 0;
 }
+/* Images */
+img {
+    max-width: 100%;
+}
+/* Source attribution after images */
+img + a {
+    font-size: 0.8em;
+    margin-top: -0.8em;
+    display: block;
+    color: $light-grey;
+}
 @media (min-width: 30em) {
     blockquote {
         padding-right: 5em;
         padding-left: 1.25em;
     }
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    margin: 0 0 1em;
-    border-radius: 5px;
-}
-
-/* Tables */
-table {
-    margin-bottom: 1em;
-    width: 100%;
-    border: 1px solid $light-grey;
-    border-collapse: collapse;
-}
-td,
-th {
-    padding: .25em .5em;
-    border: 1px solid $light-grey;
-}
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-    background-color: $very-light-grey;
 }

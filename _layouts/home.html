@@ -2,33 +2,39 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-    <div class="item">
-        <a href="{{ site.baseurl }}{{ post.url }}" class="item__link"></a>
-        <h4 class="heading heading--post heading__date">{{ post.date | date_to_long_string }}</h4>
-         <a href="{{ site.baseurl }}{{ post.url }}"><h2 class="heading heading--post heading__item">{{ post.title }}</h2></a>
 
-        {{ post.content | split:'<!--break-->' | first }}
-        {% if post.content contains '<!--break-->' %}
-            <a href="{{ site.baseurl }}{{ post.url }}"><div class="btn btn__read-more">continue reading »</div></a>
-        {% endif %}
+<section class="wrapper">
+    {% for post in paginator.posts %}
+        <article class="post-home">
+            <a class="post-home__link" href="{{ site.baseurl }}{{ post.url }}">
+                <h2 class="post-home__title" >{{ post.title }}</h2>
+            </a>
+            <div class="post-home__title-bg"></div>
+            <aside class="post-home__categories">
+                <h3 class="post-home__category">{{ post.date | date_to_string }}</h3>
+                {% for category in post.categories %}
+                    <a href="{{ category }}">
+                        <h3 class="post-home__category">#{{ category }}</h3>
+                    </a>
+                {% endfor %}
+            </aside>
+        </article>
+    {% endfor %}
 
-    </div>
-{% endfor %}
-
-<div class="pagination">
-    {% if paginator.next_page %}
-        <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">older</a>
-    {% else %}
-        <span class="pagination-item older">older</span>
-    {% endif %}
-    {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-            <a class="pagination-item newer" href="/">newer</a>
+    <section class="pagination">
+        {% if paginator.next_page %}
+            <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">older</a>
         {% else %}
-            <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">newer</a>
+            <!-- <span class="pagination-item older">older</span> -->
         {% endif %}
-    {% else %}
-        <span class="pagination-item newer">newer</span>
-    {% endif %}
-</div>
+        {% if paginator.previous_page %}
+            {% if paginator.page == 2 %}
+                <a class="pagination-item newer" href="/">newer</a>
+            {% else %}
+                <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">newer</a>
+            {% endif %}
+        {% else %}
+            <!-- <span class="pagination-item newer">newer</span> -->
+        {% endif %}
+    </section>
+</section>

@@ -1,0 +1,153 @@
+.post-home {
+    display: block;
+    width: 100%;
+    @include rem(margin-top, 0.75);
+    @include rem(margin-bottom, 0.75);
+
+    &__link {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        transition: margin 250ms ease-in-out;
+
+        &:hover .post-home__title {
+            color: $background-color;
+        }
+
+        &:hover ~ .post-home__title-bg {
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+        }
+    }
+
+    &__title {
+        margin: 0;
+        display: inline-block;
+        color: $text-color;
+        @include transition(color, 250ms, linear);
+        padding: 0 0.3em;
+
+        &-bg {
+            display: block;
+            position: absolute;
+            @include transition(transform, 250ms, ease-in-out);
+            -webkit-transition: -webkit-transform 250ms ease-in-out;
+            z-index: 1;
+            background-color: $main-color;
+            transform: scaleX(0);
+            -webkit-transform: scaleX(0);
+            margin-top: -1.85em;
+        }
+    }
+
+    &__categories {
+        width: 100%;
+        margin-top: -0.3em;
+        min-height: 1em;
+    }
+
+    &__category {
+        display: inline-block;
+        @include rem(font-size, 0.8);
+        margin: 0;
+        color: $dark-grey;
+        font-weight:400;
+        margin-right: 0.4em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.post {
+    @for $index from 1 through 6 {
+        @for $index2 from 1 through 6 {
+            h#{$index} + h#{$index2}{
+                margin-top: 0;
+            }
+        }
+    }
+
+    display: block;
+    width: 100%;
+    max-width: 28em;
+    margin: 0 auto;
+    @include rem(margin-top, 4);
+    @include rem(margin-bottom, 5);
+    padding: 0 1em;
+
+    a {
+        color: $main-color;
+        &:hover {
+            color: darken($main-color, 25);
+        }
+    }
+
+    hr {
+    }
+
+    h1, h2, h3, h4 {
+        margin-bottom: 0.5em;
+    }
+
+    &__date {
+        color: $dark-grey;
+        font-family: $sans-serif;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 0.5em;
+        font-size: 1em;
+    }
+
+    & .post__date {
+        // Overriding the .post h1 margin-bottom, see line 90
+        margin-bottom: 1.75em;
+    }
+
+    &__title {
+        margin: 0;
+        display: block;
+        color: $text-color;
+        padding: 0;
+        font-family: $sans-serif;
+        text-align: center;
+
+        & + hr {
+            margin: 0;
+        }
+    }
+
+    & .post__title {
+        // Overriding the .post h1 margin-bottom, see line 90
+        margin-bottom: 0.2em;
+    }
+
+    &__categories {
+        width: 100%;
+        margin-top: -0.6em;
+        min-height: 1em;
+    }
+
+    &__category {
+        display: inline-block;
+        @include rem(font-size, 1);
+        margin: 0;
+        color: $dark-grey;
+        font-weight:400;
+        margin-right: 0.4em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    p {
+        word-wrap: break-word;
+        hyphens: auto;
+        -webit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -o-hyphens: auto;
+    }
+}
