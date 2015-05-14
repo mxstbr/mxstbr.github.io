@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: WebAudio APwhat?
 categories: JavaScript tech WebAudio
 ---

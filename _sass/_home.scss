@@ -18,7 +18,7 @@
 .wrapper {
     width: 100%;
     text-align: center;
-    @include rem(margin-top, 6);
+    @include rem(margin-top, 4);
     font-family: $sans-serif;
-    @include rem(margin-bottom, 6);
+    @include rem(margin-bottom, 4);
 }
