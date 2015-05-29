@@ -2,9 +2,10 @@
 title: "&lt;mxstbr/&gt;"
 url-title: "Max Stoiber"
 description: "Blogging about HTML, CSS, JavaScript and the Web"
-paginate: 5
+paginate: 50
 url: "http://mxstbr.com"
-future: true
+permalink: /:year/:month/:title
+future: false
 defaults:
   -
     scope:
@@ -16,7 +17,7 @@ defaults:
 # Build settings
 markdown: redcarpet
 redcarpet:
-  extensions: [smart, no_intra_emphasis, tables, fenced_code_blocks, autolink, lax_spacing, footnotes, disable_indented_code_blocks, superscript]
+  extensions: [smart, no_intra_emphasis, tables, fenced_code_blocks, autolink, lax_spacing, footnotes, disable_indented_code_blocks, superscript, with_toc_data]
 sass:
   sass_dir: _sass
   style: normal

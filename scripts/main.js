@@ -2,6 +2,7 @@ $(function() {
 	alignTitleBackgrounds();
 	$('.post-home__link').click(pageFadeOut);
 	$('.title').click(pageFadeOut);
+	$('.pagination-item').click(pageFadeOut);
 	$('.post').css('opacity', '0');
 	setTimeout(function() {
 		$('.post').css('transition', 'opacity 250ms ease-in-out');
@@ -25,7 +26,7 @@ $(function() {
 	      if (target.length) {
 	        $('html,body').animate({
 	          scrollTop: target.offset().top
-	        }, 1000);
+	        }, 125);
 	        return false;
 	      }
 	    }
@@ -38,13 +39,18 @@ function alignTitleBackgrounds() {
 	$('.post-home__title-bg').each(function(i, elem) {
 		var $elem = $(elem);
 		var title = $elem.parent().find(".post-home__title")[0];
-		$elem.css('width', $(title).width() + parseFloat($(title).css("padding-right")) * 2).css('height', $(title).height()).css('left', $(title).offset().left);
+		$elem.css('width', $(title).width() + parseFloat($(title).css("padding-right")) * 2).css('height', $(title).height() + 2).css('margin-top', -$(title).height()).css('left', $(title).offset().left);
 	});
 }
 
 function pageFadeOut(evt) {
 	evt.preventDefault();
-	var target = $(evt.target).parent().attr('href');
+	var target;
+	if (!$(evt.target).attr('href')) {
+		target = $(evt.target).parent().attr('href');
+	} else {
+		target = $(evt.target).attr('href');
+	}
 	// Scroll to top
 	$('html,body').animate({
         scrollTop: 0

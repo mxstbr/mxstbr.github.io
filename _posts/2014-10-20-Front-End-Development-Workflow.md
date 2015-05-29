@@ -3,7 +3,7 @@ published: true
 layout: post
 comments: true
 title: My Front-End Development Workflow
-categories: Frontend Setup
+tags: Frontend Setup
 ---
 
 It all started when I tried out [Sublime Text](http://sublimetext.com) - and loved it. It's brilliant features along with it's great plugin ecosystem make this code editor my definite favorite. It is available cross-platform for Mac, Windows and Linux, and it's free!

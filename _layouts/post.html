@@ -4,7 +4,7 @@ layout: default
 
 <article class="post" role="article">
 	<header>
-		<h1 class="post__title">{{ page.title }}</h1>
+		<h1 class="post__title">{{ page.title | xml_escape }}</h1>
 		<hr />
 		<h2 class="post__date">{{ page.date | date_to_long_string }}</h2>
 	</header>

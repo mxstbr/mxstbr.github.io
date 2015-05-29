@@ -7,15 +7,13 @@ layout: default
     {% for post in paginator.posts %}
         <article class="post-home">
             <a class="post-home__link" href="{{ site.baseurl }}{{ post.url }}">
-                <h2 class="post-home__title" >{{ post.title }}</h2>
+                <h2 class="post-home__title" >{{ post.title | xml_escape }}</h2>
             </a>
             <div class="post-home__title-bg"></div>
             <aside class="post-home__categories">
                 <h3 class="post-home__category">{{ post.date | date_to_string }}</h3>
-                {% for category in post.categories %}
-                    <a href="{{ category }}">
-                        <h3 class="post-home__category">#{{ category }}</h3>
-                    </a>
+                {% for tag in post.tags %}
+                    <h3 class="post-home__category">#{{ tag | downcase }}</h3>
                 {% endfor %}
             </aside>
         </article>
@@ -23,7 +21,7 @@ layout: default
 
     <section class="pagination">
         {% if paginator.next_page %}
-            <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">older</a>
+            <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">older</a>
         {% else %}
             <!-- <span class="pagination-item older">older</span> -->
         {% endif %}
@@ -31,7 +29,7 @@ layout: default
             {% if paginator.page == 2 %}
                 <a class="pagination-item newer" href="/">newer</a>
             {% else %}
-                <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">newer</a>
+                <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">newer</a>
             {% endif %}
         {% else %}
             <!-- <span class="pagination-item newer">newer</span> -->

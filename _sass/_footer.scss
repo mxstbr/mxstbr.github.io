@@ -14,16 +14,15 @@ footer ul {
 
 footer ul li {
 	display: inline-block;
-	@include rem(font-size, 0.7);
+	@include rem(font-size, 0.9);
 	margin-right: 0.5em;
-	font-family: $sans-serif;
 
 	a {
 		color: $text-color;
-		transition: color 250ms;
+		transition: color 150ms;
 
 		&:hover {
-			color: $main-color;
+			color: darken($main-color,30);
 		}
 	}
 }

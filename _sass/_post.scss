@@ -142,6 +142,63 @@
         }
     }
 
+    &__example {
+        padding: 1em 0em;
+        border: 1px solid $very-light-grey;
+        border-radius: 3px;
+        margin: 1em 0;
+        padding-top: 0;
+
+        &-bar {
+            height: 1em;
+            width: 100%;
+            border-radius: 3px 3px 0 0;
+            background-color: $very-light-grey;
+            margin-bottom: 1em;
+            position: relative;
+        }
+
+        &-controls {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #FDBD41;
+            position: absolute;
+            top: 5px;
+            left: 20px;
+
+            &:before {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: #FC605B;
+                position: absolute;
+                top: 0;
+                left: -15px;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: #33C748;
+                position: absolute;
+                top: 0;
+                left: 15px;
+            }
+        }
+
+        &-content {
+            width: 100%;
+            padding: 0 1em;
+            margin: 0;
+        }
+    }
+
     p {
         word-wrap: break-word;
         hyphens: auto;

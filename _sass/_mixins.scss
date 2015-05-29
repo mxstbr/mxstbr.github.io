@@ -5,7 +5,7 @@
   @return 1em * ( $fontSize / $contextSize ); }
 
 @mixin rem($property, $value) {
-    #{$property}: #{$value * 10}px;
+    #{$property}: #{$value * 16}px;
     #{$property}: #{$value}rem;
 }
 
