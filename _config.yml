@@ -3,7 +3,7 @@ title: "&lt;mxstbr/&gt;"
 url-title: "Max Stoiber"
 description: "Blogging about HTML, CSS, JavaScript and the Web"
 paginate: 50
-url: "http://mxstbr.com"
+url: "http://blog.mxstbr.com"
 permalink: /:year/:month/:title
 future: false
 defaults:
