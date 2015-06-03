@@ -3,14 +3,12 @@ $(function() {
 	$('.post-home__link').click(pageFadeOut);
 	$('.title').click(pageFadeOut);
 	$('.pagination-item').click(pageFadeOut);
-	$('.post').css('opacity', '0');
 	setTimeout(function() {
 		$('.post').css('transition', 'opacity 250ms ease-in-out');
 		setTimeout(function() {
 			$('.post').css('opacity', '1');
 		}, 0);
 	}, 0);
-	$('.wrapper').css('opacity', '0');
 	setTimeout(function() {
 		$('.wrapper').css('transition', 'opacity 250ms ease-in-out, margin 250ms ease-in-out');
 		setTimeout(function() {
@@ -58,10 +56,7 @@ function pageFadeOut(evt) {
     setTimeout(function() {
 		$('.wrapper').css('opacity', '0');
 		$('footer').css('opacity', '0');
-		$('.post').css('transition', 'opacity 250ms ease-in-out');
-		setTimeout(function() {
-			$('.post').css('opacity', '0');
-		}, 0);
+		$('.post').css('opacity', '0');
 		setTimeout(function() {
 			window.open(target,"_self");
 		}, 250);
