@@ -2,17 +2,17 @@
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ site.name | xml_escape }}</title>
+	<title>Max Stoibers Blog</title>
 	<link href="{{ site.url }}{{ page.url }}" rel="self" />
 	<link href="{{ site.url }}/" />
 	<id>{{ site.url }}/</id>
 	<author>
-		<name>{{ site.author | xml_escape }}</name>
+		<name>Max Stoiber</name>
 	</author>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 {% for post in site.posts limit:20 %}
 	<entry>
-		<title type="text">{{ post.title | strip_html }}</title>
+		<title type="text">{{ post.title }}</title>
 		<link href="{{ site.url }}{{ post.url }}" />
 		<id>{{ site.url }}{{ post.url }}</id>
 		<published>{{ post.date | date_to_xmlschema }}</published>
