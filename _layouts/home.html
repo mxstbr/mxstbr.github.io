@@ -4,6 +4,7 @@ layout: default
 
 
 <section class="wrapper">
+    <h2 style="display: none;">Posts</h2>
     {% for post in paginator.posts %}
         <article class="post-home">
             <a class="post-home__link" href="{{ site.baseurl }}{{ post.url }}">
@@ -18,21 +19,4 @@ layout: default
             </aside>
         </article>
     {% endfor %}
-
-    <section class="pagination">
-        {% if paginator.next_page %}
-            <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">older</a>
-        {% else %}
-            <!-- <span class="pagination-item older">older</span> -->
-        {% endif %}
-        {% if paginator.previous_page %}
-            {% if paginator.page == 2 %}
-                <a class="pagination-item newer" href="/">newer</a>
-            {% else %}
-                <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">newer</a>
-            {% endif %}
-        {% else %}
-            <!-- <span class="pagination-item newer">newer</span> -->
-        {% endif %}
-    </section>
 </section>
