@@ -135,7 +135,7 @@ function scrollTo (amount) {
 		amount = 0;
 	}
 	if (document.body.scrollTop !== amount || document.documentElement.scrollTop !== amount){
-	    window.scrollBy(0,-1);
+	    window.scrollBy(0,-50);
 	    var scrollTimeout = setTimeout('scrollTo(' + amount + ')',10);
 	} else {
 		clearTimeout(scrollTimeout);
