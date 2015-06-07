@@ -13,6 +13,17 @@ layout: default
 
 	{% include newsletter-form.html %}
 
+	<hr />
+
+	<div class="post__related">
+		{% if page.previous %}
+			<a href="{{ page.previous.url }}" class="post__related-previous" onclick="ga('send', 'event', 'post', 'click', 'previous');" title="{{ page.previous.title }}">Previous Post</a>
+		{% endif %}
+		{% if page.next %}
+			<a href="{{ page.next.url }}" class="post__related-next" onclick="ga('send', 'event', 'post', 'click', 'next');" title="{{ page.next.title }}">Next Post</a>
+		{% endif %}
+	</div>
+
 </article>
 
 <!-- {% for post in site.related_posts %}

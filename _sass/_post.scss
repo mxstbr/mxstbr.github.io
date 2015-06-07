@@ -87,6 +87,7 @@
     }
 
     hr {
+        margin: 2em 0;
     }
 
     h1, h2, h3, h4 {
@@ -198,6 +199,21 @@
             width: 100%;
             padding: 0 1em;
             margin: 0;
+        }
+    }
+
+    &__related {
+        clear: both;
+        width: 100%;
+        display: block;
+        overflow: auto;
+
+        &-previous {
+            float: left;
+        }
+
+        &-next {
+            float: right;
         }
     }
 

@@ -10,6 +10,13 @@
 	p {
 		margin-bottom: 0.75em;
 	}
+
+	&:after {
+		display: block;
+		clear: both;
+		height: 0;
+		content: "";
+	}
 }
 
 .mc_hr {
