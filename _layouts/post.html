@@ -17,10 +17,10 @@ layout: default
 
 	<div class="post__related">
 		{% if page.previous %}
-			<a href="{{ page.previous.url }}" class="post__related-previous" onclick="ga('send', 'event', 'post', 'click', 'previous');" title="{{ page.previous.title }}">Previous Post</a>
+			<a href="{{ page.previous.url }}" class="post__related-previous" onclick="ga('send', 'event', 'post', 'click', 'previous');" title="{{ page.previous.title }}">Previous Article</a>
 		{% endif %}
 		{% if page.next %}
-			<a href="{{ page.next.url }}" class="post__related-next" onclick="ga('send', 'event', 'post', 'click', 'next');" title="{{ page.next.title }}">Next Post</a>
+			<a href="{{ page.next.url }}" class="post__related-next" onclick="ga('send', 'event', 'post', 'click', 'next');" title="{{ page.next.title }}">Next Article</a>
 		{% endif %}
 	</div>
 
