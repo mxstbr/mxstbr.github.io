@@ -1,0 +1,10 @@
+.fourzerofour {
+	&__list {
+		list-style-type: none;
+		padding-left: 0;
+
+		li {
+			text-decoration: underline;
+		}
+	}
+}
