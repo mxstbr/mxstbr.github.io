@@ -36,4 +36,4 @@ Incredibly interesting insights come to life here, e.g. out of 624h that I have 
 	<img src="{{ site.baseurl }}/img/gyroscopejune.png" alt="An excerpt of the data I have collected on gyroscope">
 </div>
 
-This should be enough to get you started with logging your life. I am looking to buy some sort of wearable now, to get rid of the need to carry my smartphone around while running. If you have any recommendations, or just want to chat, write me on [Twitter](https://twitter.com/mxstbr)!
+This should be enough to get you started with logging your life. I am looking to buy some sort of wearable now, to get rid of the need to carry my smartphone around while running. If you have any recommendations, or just want to chat, ping me on [Twitter](https://twitter.com/mxstbr)!
