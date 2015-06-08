@@ -40,6 +40,10 @@
         margin-bottom: 0.5em;
     }
 
+    &__image {
+        margin-bottom: 1em;
+    }
+
     &__image:after {
         content: attr(data-subtitle);
         display: block;
