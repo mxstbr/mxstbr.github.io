@@ -67,7 +67,7 @@
 	font-weight: bold;
 	line-height: 2em;
 	margin: 0 auto;
-	padding: 0 22px;
+	padding: 0.15em 1.5em;
 	text-align: center;
 	text-decoration: none;
 	vertical-align: top;
@@ -75,8 +75,8 @@
 	width: auto;
 	display: block;
 	font-family: $sans-serif;
-	float: left;
 	transition: background-color 150ms ease-out;
+	letter-spacing: 0.02em;
 }
 
 #mc_embed_signup .button:hover {
@@ -95,7 +95,7 @@
 #mc_embed_signup .mc-field-group {
 	clear:left;
 	position:relative;
-	width:96%;
+	width:100%;
 	padding-bottom:3%;
 	min-height:50px;
 }
