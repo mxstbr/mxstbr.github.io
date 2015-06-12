@@ -1,5 +1,3 @@
-'use strict';
-
 // Get most common elements
 var wrapper = document.querySelector('.wrapper');
 var post = document.querySelector('.post');

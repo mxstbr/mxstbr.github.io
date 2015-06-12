@@ -48,6 +48,10 @@
 }
 
 @mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: -webkit-+$transition-property $transition-time $method;
+    -moz-transition: -moz-+$transition-property $transition-time $method;
+    -ms-transition: -ms-+$transition-property $transition-time $method;
+    -o-transition: -o-+$transition-property $transition-time $method;
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
     -ms-transition: $transition-property $transition-time $method;
