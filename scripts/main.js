@@ -1,10 +1,140 @@
+'use strict';
+
 // Get most common elements
-var wrapper = document.getElementsByClassName('wrapper')[0];
-var post = document.getElementsByClassName('post')[0];
-var footer = document.getElementsByClassName('footer')[0];
+var wrapper = document.querySelector('.wrapper');
+var post = document.querySelector('.post');
+var footer = document.querySelector('footer');
 
 // Align the title backgrounds asap
 alignTitleBackgrounds();
+
+// Deep link to headings
+// https://github.com/callmecavs/heading-links.js
+if (post !== null) {
+	function HeadingLinks( options ) {
+	  // defaults
+	  this._selector          = options.selector || 'h1, h2, h3';
+	  this._hoverLinks        = options.hoverLinks !== false;
+	  this._hoverHeadingAttr  = options.hoverHeadingAttr || 'data-heading';
+	  this._hoverLinkAttr     = options.hoverLinkAttr || 'data-heading-link';
+	  if (window.innerWidth < 500) {
+	  	this._hoverLinkPosition = 'after';
+	  } else {
+	  	this._hoverLinkPosition = 'before';
+	  }
+
+	  // headings vars
+	  this._headings       = post.querySelectorAll(this._selector);
+	  this._headingsLength = this._headings.length;
+
+	  // call to create
+	  document.addEventListener('DOMContentLoaded', this.create(), false);
+	}
+
+	// METHODS
+
+	HeadingLinks.prototype.create = function() {
+	  // loop through headings
+	  for(var index = 0; index < this._headingsLength; index++) {
+	    // get node
+	    var element = this._headings[index];
+
+	    // get heading text
+	    var elementText = element.textContent;
+
+	    // convert text to kebab-case
+	    elementText = elementText.toLowerCase()                 // convert to lower case
+	                             .replace(/[^\w\s]/gi, '')      // remove special chars, but preserve spaces
+	                             .replace(/\s+/g, '-')          // replace spaces with dashes
+	                             .replace(/\_+/g, '');          // remove underscores
+
+	    // add id attribute to element
+	    element.setAttribute('id', elementText);
+	  }
+
+	  // optionally add hover links
+	  if(this._hoverLinks) {
+	    this.addHoverLinks();
+	  }
+	}
+
+	HeadingLinks.prototype.destroy = function() {
+	  // loop through headings
+	  for(var index = 0; index < this._headingsLength; index++) {
+	    // remove id attribute
+	    this._headings[index].removeAttribute('id');
+	  }
+	}
+
+	HeadingLinks.prototype.addHoverLinks = function() {
+	  // loop through headings
+	  for(var index = 0; index < this._headingsLength; index++) {
+	    // get heading
+	    var heading = this._headings[index];
+
+	    // add heading data attribute
+	    heading.setAttribute(this._hoverHeadingAttr, '');
+
+	    // save id
+	    var headingID = heading.id;
+
+	    // create link
+	    var link = document.createElement('a');
+
+	    // add link href attribute
+	    var linkUrl = '#' + headingID;
+	    link.setAttribute('href', linkUrl);
+	    link.setAttribute(this._hoverLinkAttr, '');
+
+	    // based on link position option
+	    if(this._hoverLinkPosition === 'before') {
+	      // prepend link, or
+	      heading.insertBefore(link, heading.firstChild);
+	    }
+	    else {
+	      // append link
+	      heading.appendChild(link);
+	    }
+	  }
+	}
+
+	HeadingLinks.prototype.removeHoverLinks = function() {
+	  // loop through headings
+	  for(var headingIndex = 0; headingIndex < this._headingsLength; headingIndex++) {
+	    // get heading
+	    var heading = this._headings[headingIndex];
+
+	    // remove heading data attribute
+	    heading.removeAttribute(this._hoverHeadingAttr);
+
+	    // get the children
+	    var children = heading.children;
+
+	    // cache children length
+	    var childrenLength = children.length;
+
+	    // loop through children
+	    for(var childrenIndex = 0; childrenIndex < childrenLength; childrenIndex++) {
+	      // remove only the link with heading
+	      if(children[childrenIndex].hasAttribute(this._hoverLinkAttr)) {
+	        children[childrenIndex].parentNode.removeChild(children[childrenIndex]);
+
+	        // stop after we find it
+	        break;
+	      }
+	    }
+	  }
+	}
+
+	HeadingLinks.prototype.getList = function() {
+	  // return node list of headings
+	  return this._headings;
+	}
+	var headingLinks = new HeadingLinks({
+	  selector: 'h2, h3, h4',
+	  hoverLinkPosition: 'before'
+	});
+}
 // Get all the post links and bind the click event to pageFadeOut
 var postlinks = document.getElementsByClassName("post-home__link");
 for (var k = 0; k < postlinks.length; k++) {
@@ -17,7 +147,7 @@ for (var l = 0; l < titles.length; l++) {
 }
 // Then fade in the post if we're on a post page
 setTimeout(function() {
-	if (post !== undefined) {
+	if (post !== null) {
 		post.style.transition = 'opacity 250ms ease-in-out';
 		setTimeout(function() {
 			post.style.opacity = 1;
@@ -26,7 +156,7 @@ setTimeout(function() {
 }, 0);
 // Or the wrapper if we're on any other page
 setTimeout(function() {
-	if (wrapper !== undefined) {
+	if (wrapper !== null) {
 		wrapper.style.transition = 'opacity 250ms ease-in-out, margin 250ms ease-in-out';
 		setTimeout(function() {
 			wrapper.style.opacity = 1;
@@ -75,13 +205,13 @@ function pageFadeOut(evt) {
 	scrollTo(0);
 	// Fade out the page
     setTimeout(function() {
-		if (wrapper !== undefined) {
+		if (wrapper !== null) {
 			wrapper.style.opacity = 0;
 		}
-		if (post !== undefined) {
+		if (post !== null) {
 			post.style.opacity = 0;
 		}
-		if (footer !== undefined) {
+		if (footer !== null) {
 			footer.style.opacity = 0;
 		}
 		// Then open the clicked link
