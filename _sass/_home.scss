@@ -57,7 +57,6 @@
             display: block;
             position: absolute;
             @include transition(transform, 250ms, ease-in-out);
-            -webkit-transition: -webkit-transform 250ms ease-in-out;
             z-index: 1;
             background-color: $main-color;
             transform: scaleX(0);

@@ -36,6 +36,6 @@ $hover-link-attr:    "[data-heading-link]";
 
 #{$hover-heading-attr}:hover #{$hover-link-attr} {
     display: inline;
-    opacity: 1;
+    opacity: 0.5;
     transition: opacity 100ms ease-out 500ms, color 100ms ease-out;
 }
