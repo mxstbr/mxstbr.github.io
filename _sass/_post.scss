@@ -18,7 +18,8 @@
 
     a {
         color: $main-color;
-        &:hover {
+        &:hover,
+        &:visited {
             color: darken($main-color, 25);
         }
     }
