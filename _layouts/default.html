@@ -2,7 +2,7 @@
 <html lang="en">
 	{% include head.html %}
 	<body>
-		<a href="/" onclick="ga('send', 'event', 'page', 'click', 'title');"><h1 class="title">{{ site.title }}</h1></a>
+		<a href="/" onclick="OWATracker.trackAction('page', 'click', 'title');"><h1 class="title">{{ site.title }}</h1></a>
 		{{ content }}
 		{% include footer.html %}
 	</body>

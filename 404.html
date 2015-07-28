@@ -6,7 +6,7 @@ layout: default
 	<h2>Oops, the page you are trying to access does not exist.</h2>
 	<p>Try one of these links:</p>
 	<ul class="fourzerofour__list">
-		<li><a href="/" onclick="ga('send', 'event', 'fourzerofour', 'click', 'homepage');">Homepage</a></li>
-		<li><a href="/sitemap.xml" onclick="ga('send', 'event', 'fourzerofour', 'click', 'sitemap');">Sitemap</a></li>
+		<li><a href="/" onclick="OWATracker.trackAction('fourzerofour', 'click',  'homepage');">Homepage</a></li>
+		<li><a href="/sitemap.xml" onclick="OWATracker.trackAction('fourzerofour', 'click',  'sitemap');">Sitemap</a></li>
 	</ul>
 </div>

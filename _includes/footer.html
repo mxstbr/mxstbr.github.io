@@ -1,17 +1,30 @@
 <footer>
 	<ul>
-		<li class="footer__item"><a href="https://twitter.com/mxstbr" onclick="ga('send', 'event', 'social', 'click', 'twitter');">twitter</a></li>
-		<li class="footer__item"><a href="https://github.com/mxstbr" onclick="ga('send', 'event', 'social', 'click', 'github');">github</a></li>
-		<li class="footer__item"><a href="mailto:contact@mxstbr.com" onclick="ga('send', 'event', 'social', 'click', 'mail');">mail</a></li>
-		<li class="footer__item"><a href="/feed.atom" onclick="ga('send', 'event', 'social', 'click', 'rss');">rss</a></li>
+		<li class="footer__item"><a href="https://twitter.com/mxstbr" onclick="OWATracker.trackAction('social', 'click', 'twitter');">twitter</a></li>
+		<li class="footer__item"><a href="https://github.com/mxstbr" onclick="OWATracker.trackAction('social', 'click', 'github');">github</a></li>
+		<li class="footer__item"><a href="mailto:contact@mxstbr.com" onclick="OWATracker.trackAction('social', 'click', 'mail');">mail</a></li>
+		<li class="footer__item"><a href="/feed.atom" onclick="OWATracker.trackAction('social', 'click', 'rss');">rss</a></li>
 	</ul>
 </footer>
 
 <script type="text/javascript" src="{{ site.baseurl }}/scripts/main.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro:400,700|Source+Serif+Pro:400,700' rel='stylesheet' type='text/css'>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-49258834-8', 'auto');
-ga('send', 'pageview');
+<!-- Start Open Web Analytics Tracker -->
+<script type="text/javascript">
+//<![CDATA[
+var owa_baseUrl = 'http://analytics.mxstbr.com/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', '9985b628ba3fa87065e8e88c93b400c2']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+owa_cmds.push(['trackDomStream']);
+
+(function() {
+	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>
 </script>
+<!-- End Open Web Analytics Code -->
