@@ -13,16 +13,16 @@ componentDidMount: function() {
 	var elem = this.getDOMNode();
 	// Set the opacity of the element to 0
 	elem.style.opacity = 0;
-	setTimeout(function() {
+	window.requestAnimationFrame(function() {
 		// Now set a transition on the opacity
 		elem.style.transition = "opacity 250ms";
 		// and set the opacity to 1
 		elem.style.opacity = 1;
-	}, 0);
+	});
 }
 […]
 ```
 
 *NOTE: I omitted vendor prefixes in favour of code clarity, do add them in production use.*
 
-Notice the `setTimeout` with a duration of 0 on line 6 — without it, JavaScript would set the `transition` to `opacity 250ms` at the same time as the `opacity` to `0`, so the component would fade out first and fade back in afterwards, which is not intended. 
+Notice the `requestAnimationFrame` on line 6 — without it, JavaScript would set the `transition` to `opacity 250ms` at the same time as the `opacity` to `0`, so the component would fade out first and fade back in afterwards, which is not intended. 
