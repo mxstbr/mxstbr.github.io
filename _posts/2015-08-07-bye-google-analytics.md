@@ -4,7 +4,7 @@ title: Bye Bye Google Analytics
 tags: privacy google analytics
 ---
 
-A few days ago, I got rid of Google Analytics on [all of my websites](https://github.com/mxstbr), and moved all my analytics needs to a self–hosted instance of [Open Web Analytics](http://https://github.com/padams/Open-Web-Analytics).
+A few days ago, I got rid of Google Analytics on [all of my websites](https://github.com/mxstbr), and moved all my analytics needs to a self–hosted instance of [Open Web Analytics](https://github.com/padams/Open-Web-Analytics).
 
 The main reason for doing this is the privacy of the visitors of the websites — while some people are okay with (or do not care/know about) being tracked by Google wherever they go, some might not be, and it is not much effort to run your own analytics server.
 
