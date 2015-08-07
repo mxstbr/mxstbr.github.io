@@ -79,4 +79,6 @@ owa_cmds.push(['trackDomStream']);
 ```
 Don't forget to replace the `owa_baseUrl` with your domain and to set the correct site id!
 
-Congratulations, you are now tracking your website with Open Web Analytics! 
+Congratulations, you are now tracking your website with Open Web Analytics!
+
+*This post was originally published on [N-O-D-E.net](http://n-o-d-e.net/post/125924418696/how-to-ditch-google-analytics-and-run-your-own).*
