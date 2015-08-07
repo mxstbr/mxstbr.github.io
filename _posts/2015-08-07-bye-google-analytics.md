@@ -13,12 +13,10 @@ OWA is a very well maintained product, and is basically equal to Google Analytic
 Here is how I did it:
 
 1. Acquire a server running PHP & MySQL
-
-I chose [DigitalOcean](https://www.digitalocean.com/?refcode=d371ed7f99af) (this is a referral link, you get 10$ in DigitalOcean credits and I, Max Stoiber, get 25$ if you sign–up through it. If you would rather not get 10$, here is a [non–referral link](https://www.digitalocean.com)) for this, as they offer cheap options which are perfect for the small needs of an analytics server. 
+I chose [DigitalOcean](https://www.digitalocean.com/?refcode=d371ed7f99af) (referral link) for this, as they offer cheap options which are perfect for the small needs of an analytics server. 
 I set up the 5$/month option, running Ubuntu 14.04 and the LAMP (Linux, Apache, MySQL, PHP) stack. 
 
 2. Create the database and user for Open Web Analytics
-
 Assuming you went with the LAMP stack and are now using MySQL, this is what you have to do to get your server ready for OWA. First, create a database to store your analytics data.
 ```SQL
 CREATE DATABASE analytics;
@@ -37,7 +35,6 @@ FLUSH PRIVILEGES;
 ```
 
 3. Download Open Web Analytics
-
 If you do not have it already, install `git` on your server by running 
 ```
 apt-get install git
@@ -57,15 +54,11 @@ sudo chmod -R 755 /var/www/html
 ```
 
 4. Install Open Web Analytics
-
-OWA thankfully comes with a very handy installer, so you just have to open `http://yourdomain.com/install.php` in your browser and follow the steps. 
-
+OWA thankfully comes with a very handy installer, so you just have to open `http://yourdomain.com/install.php` in your browser and follow the steps.
 When asked for the database credentials, the database name is `analytics`, the username `openwebanalytics` and the password whatever you set it to.
 
 5. Track your website with Open Web Analytics
-
 The only step remaining is dropping the tracking code into your HTML files:
-
 ```HTML
 <script type="text/javascript">
 //<![CDATA[
@@ -84,7 +77,6 @@ owa_cmds.push(['trackDomStream']);
 //]]>
 </script>
 ```
-
 Don't forget to replace the `owa_baseUrl` with your domain and to set the correct site id!
 
 Congratulations, you are now tracking your website with Open Web Analytics! 
