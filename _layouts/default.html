@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	{% include head.html %}
-	<body>
+	<body itemscope itemtype="https://schema.org/Blog">
 		<a href="/" onclick="OWATracker.trackAction('page', 'click', 'title');"><h1 class="title">{{ site.title }}</h1></a>
 		{{ content }}
 		{% include footer.html %}
