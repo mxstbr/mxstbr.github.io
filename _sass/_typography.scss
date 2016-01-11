@@ -38,7 +38,7 @@ h4 {
 }
 
 blockquote {
-    @include rem(font-size, 1.25);
+    @include rem(font-size, 1);
     /* 20px / 16px */
     line-height: 1.25em;
     /* 25px / 20px */

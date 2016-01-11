@@ -143,8 +143,11 @@ pre code {
 blockquote {
     padding: .5em 1em;
     margin: .8em 0;
-    color: #7a7a7a;
+    color: $dark-grey;
     border-left: .25em solid $light-grey;
+}
+blockquote p {
+  font-size: 0.75rem;
 }
 blockquote p:last-child {
     margin-bottom: 0;
