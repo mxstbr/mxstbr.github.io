@@ -51,3 +51,5 @@ Lets add that `test` script:
 ```
 
 Now your collaborators can enter `$ npm run test` into the terminal and Mocha will unit test your application without needing to globally install anything!
+
+<sub>*Thanks to [@helloanselm](https://twitter.com/helloanselm) for proof-reading a draft of this post!*</sub>
