@@ -4,13 +4,17 @@ title: npm scripts
 tags: nodejs npm tooling
 ---
 
-`npm` has support for the `scripts` property in the `package.json` file — one of the most used, but also one of the most overlooked features of `npm`!
+`npm` has support for the `scripts` property in `package.json` — one of the most used, but also one of the most overlooked features of `npm`!
 
 ## What does the `scripts` property do?
 
-Chances are high you're using scripts if you're using `npm`: Whenever you type `npm run <command>` (which is a short version of `npm run-script <command>`), that's a script being ran. There's also default scripts for which you can omit the `run`, e.g. `npm test` is the same thing as `npm run test`, so `npm test` also uses scripts.
+Chances are high you're using scripts if you're using `npm`: Whenever you enter `$ npm run <command>` (which is a short version of `$ npm run-script <command>`) into the terminal, that's a script being ran.
 
-The thing that makes `npm run` so powerful is that it adds `node_modules/.bin` (which is where dependencies are installed) to the `PATH` provided to scripts. In english this means that you can use your installed dependencies on the command line without having to install them globally!
+There's also some special, predefined aliases which convert to the `npm run` version, e.g. `$ npm test` converts to `$ npm run test` behind the scenes, and they can be used interchangably.
+
+> Some more aliases: `$ npm install`, `$ npm publish`, `$ npm start`,... [full list](https://docs.npmjs.com/misc/scripts#description)
+
+The thing that makes `npm run` so powerful is that it adds `node_modules/.bin` (which is where dependencies are installed) to the `PATH` provided to scripts. In understandable english this means you can use your installed dependencies on the command line without having to install them globally!
 
 ## Real world usage
 
@@ -34,7 +38,7 @@ Using npm scripts, we can specify Mocha as a `devDependency` in our `package.jso
 
 > Note: Please don't forget to add a [version range](https://docs.npmjs.com/misc/semver) so breaking changes in Mocha won't mess with your setup.
 
-Now, when developers run `npm install` (which is part of every initial setup anyway), they have Mocha installed. The problem is that it isn't globally installed, so entering `$ mocha *.test.js` into the terminal will give you an `/usr/local/bin/mocha: No such file or directory` error.
+Now, when developers enter `$ npm install` (which is part of every initial setup) into the terminal, they have Mocha installed. The problem is that it isn't globally installed, so entering `$ mocha *.test.js` into the terminal will give you an `/usr/local/bin/mocha: No such file or directory` error.
 
 We can work around this by adding a `test` script to your `package.json`. Since npm scripts add the `node_modules` folder to the `PATH`, we have access to the `mocha` command from there even though it isn't globally installed!
 
@@ -46,4 +50,4 @@ Lets add that `test` script:
 }
 ```
 
-Now your collaborators can enter `$ npm test` into the terminal and Mocha will unit test your application without needing to globally install anything!
+Now your collaborators can enter `$ npm run test` into the terminal and Mocha will unit test your application without needing to globally install anything!
