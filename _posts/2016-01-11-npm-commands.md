@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: npm scripts
 tags: nodejs npm tooling
 ---
