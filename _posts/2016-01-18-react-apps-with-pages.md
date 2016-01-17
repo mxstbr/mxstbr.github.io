@@ -27,7 +27,7 @@ This is our example setup with standard react-router routes:
 ```JSX
 var HomePage = require('./HomePage.jsx');
 var AboutPage = require('./AboutPage.jsx');
-var App = require('./App.jsx');
+var FAQPage = require('./FAQPage.jsx');
 
 <Router history={history}>
   <Route path="/" component={HomePage} />
@@ -63,10 +63,10 @@ Lets rework our example above to support asynchronous components:
     }}
   />
   <Route
-    path="/app"
+    path="/faq"
     getComponent={(location, callback) => {
       // Do async things here
-      callback(null, App);
+      callback(null, FAQPage);
     }}
   />
 </Router>
