@@ -24,7 +24,7 @@ Can we somehow make something similar happen for a React.js application?
 
 This is our example setup with standard react-router routes:
 
-```JSX
+```JS
 var HomePage = require('./HomePage.jsx');
 var AboutPage = require('./AboutPage.jsx');
 var FAQPage = require('./FAQPage.jsx');
@@ -46,7 +46,7 @@ Thankfully, react-router lets us asynchronously specify components of `<Route>`s
 
 Lets rework our example above to support asynchronous components:
 
-```JSX
+```JS
 <Router history={history}>
   <Route
     path="/"
@@ -126,7 +126,7 @@ Nice, code splitting works now! Lets combine that with `react-router`.
 
 Remember our `Route`s with asynchronous components from above? Instead of `require`ing the HomePage component above the Router, lets move that to the `getComponent` function and use `require.ensure` to only download the component (which is in its own file) when it's needed:
 
-```JSX
+```JS
 <Route
   path="/"
   getComponent={(location, callback) => {
@@ -140,7 +140,7 @@ Remember our `Route`s with asynchronous components from above? Instead of `requi
 
 This works, to make it even terser `require` the HomePage inside the `callback`:
 
-```JSX
+```JS
 <Route
   path="/"
   getComponent={(location, callback) => {
@@ -153,7 +153,7 @@ This works, to make it even terser `require` the HomePage inside the `callback`:
 
 The full example from above with pages:
 
-```JSX
+```JS
 <Router history={history}>
   <Route
     path="/"
