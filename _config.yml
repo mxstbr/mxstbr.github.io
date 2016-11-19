@@ -2,7 +2,7 @@
 title: "&lt;mxstbr/&gt;"
 url-title: "Max Stoibers Blog"
 description: "Fresh thinking and expert tips about HTML, CSS, JavaScript and other web technologies."
-paginate: 50
+paginate: 100
 url: "http://blog.mxstbr.com"
 permalink: /:year/:month/:title
 future: false
@@ -15,7 +15,14 @@ defaults:
       layout: "post"
 
 # Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
   deploy_style: compressed
+
+gems: [jekyll-paginate]
