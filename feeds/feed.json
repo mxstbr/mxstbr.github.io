@@ -5,7 +5,7 @@ layout: null
 [
 {% for collection in site.collections %}
     {% for item in collection %}
-        {% for item in site.[item.label] %}
+        {% for item in site[item.label] %}
             {% if item.title != null and item.title != empty %}
             {% unless first %},{% endunless %}{
                 "title": {{item.title | jsonify}},
