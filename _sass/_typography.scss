@@ -43,15 +43,3 @@ blockquote {
     line-height: 1.25em;
     /* 25px / 20px */
 }
-
-@media (min-width: 43.75em) {
-    html {
-        font-size: 125%;
-    }
-}
-
-@media (min-width: 70em) {
-    html {
-        font-size: 150%;
-    }
-}

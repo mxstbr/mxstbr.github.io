@@ -11,10 +11,9 @@
     width: 100%;
     max-width: 28em;
     margin: 0 auto;
-    @include rem(margin-top, 4);
+    @include rem(margin-top, 9.5);
     @include rem(margin-bottom, 5);
     padding: 0 1em;
-    opacity: 0;
 
     a {
         color: $main-color;
