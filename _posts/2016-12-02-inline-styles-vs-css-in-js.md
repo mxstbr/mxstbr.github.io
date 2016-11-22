@@ -4,13 +4,13 @@ title: Inline Styles and CSS-in-JS are not the same thing
 tags: styling react inline css-in-js
 ---
 
-With the emergence and popularity of libraries like Radium, JSS, Aphrodite and `styled-components`, everybody has been talking about styles in JavaScript. What many people don't realise is that there's a difference between what's called "inline styles" and what's called "CSS-in-JS".
+With the emergence and popularity of libraries like Radium, JSS, Aphrodite and `styled-components`, everybody has been talking about writing styles in JavaScript. What many people don't realise is that there's a difference between what's called "inline styles" and what's called "CSS-in-JS".
 
-Putting your styles into JavaScript ≠ putting your styles into JavaScript!
+Writing your styles into JavaScript ≠ writing inline styles!
 
 ## Inline styles
 
-As the name might suggest, "inline styles" attach your styles inline to the actual DOM nodes. This is possible with natively with React, or you can enhance your inline styles with a library like [Radium](https://github.com/FormidableLabs/radium).
+As the name might suggest, "inline styles" attach your styles inline to the actual DOM nodes. This works natively with React by using the `style` prop, or you can use a library like [Radium](https://github.com/FormidableLabs/radium).
 
 This is what using inline styles looks like:
 
