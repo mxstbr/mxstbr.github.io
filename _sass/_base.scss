@@ -106,6 +106,7 @@ pre code {
     background-color: transparent;
     border: none;
     letter-spacing: -0.03em;
+    font-size: 1em;
 }
 
 .highlight {
@@ -146,7 +147,7 @@ blockquote {
     border-left: .25em solid $light-grey;
 }
 blockquote p {
-  font-size: 0.75rem;
+  font-size: 0.9em;
 }
 blockquote p:last-child {
     margin-bottom: 0;
