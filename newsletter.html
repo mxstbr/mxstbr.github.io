@@ -12,42 +12,44 @@ layout: default
 
 	<!-- Archive -->
 	<h3>Archive</h3>
-	<script language="javascript" src="//mxstbr.us10.list-manage.com/generate-js/?u=5effecce7bca37cc1c8239fb3&amp;fid=6369&amp;show=2" type="text/javascript"></script>
-	<noscript>Due to the way Mailchimp works you have to have JavaScript enabled to see the archive. 😢  Sorry!</noscript>
+	<div id="archive">
+		<script language="javascript" src="//mxstbr.us10.list-manage.com/generate-js/?u=5effecce7bca37cc1c8239fb3&amp;fid=6369&amp;show=2" type="text/javascript"></script>
+		<noscript>Due to the way Mailchimp works you have to have JavaScript enabled to see the archive. 😢  Sorry!</noscript>
 
-	<script type="text/javascript">
-		// FIX MAILCHIMPS HTML INJECTION MANUALLY
-		var campaigns = document.querySelectorAll('.campaign');
-		var links = document.querySelectorAll('.campaign a');
-		var wrapper = document.querySelector('.wrapper');
+		<script type="text/javascript">
+			// FIX MAILCHIMPS HTML INJECTION MANUALLY
+			var campaigns = document.querySelectorAll('.campaign');
+			var links = document.querySelectorAll('.campaign a');
+			var archive = document.querySelector('#archive');
 
-		links.forEach(function (link, index) {
-			link.parentNode.removeChild(link);
-			campaigns[index].parentNode.removeChild(campaigns[index]);
-			// "01/31/1990 - " => ["01", "31", "1990"]
-			var dateArray = campaigns[index].textContent.substring(0, campaigns[index].textContent.length - 3).split('/');
-			// ["01", "31", "1990"] => 01.1990
-			var formattedDate = dateArray[0] + '.' + dateArray[2];
+			links.forEach(function (link, index) {
+				link.parentNode.removeChild(link);
+				campaigns[index].parentNode.removeChild(campaigns[index]);
+				// "01/31/1990 - " => ["01", "31", "1990"]
+				var dateArray = campaigns[index].textContent.substring(0, campaigns[index].textContent.length - 3).split('/');
+				// ["01", "31", "1990"] => 01.1990
+				var formattedDate = dateArray[1] + '.' + dateArray[2];
 
-			// Build DOM back together
-			var article = document.createElement('article');
-			article.className = 'newsletter-archive';
-			// Create date
-			var date = document.createElement('h3');
-			date.className = 'newsletter-archive__date';
-			date.textContent = formattedDate;
-			// Create title
-			var title = document.createElement('h2');
-			title.className = 'newsletter-archive__title';
-			title.textContent = link.textContent;
-			// Destroy link contents
-			link.textContent = '';
-			// Create final DOM
-			link.className = 'newsletter-archive__link';
-			article.appendChild(date);
-			article.appendChild(title);
-			link.appendChild(article);
-			wrapper.appendChild(link);
-		});
-	</script>
+				// Build DOM back together
+				var article = document.createElement('article');
+				article.className = 'newsletter-archive';
+				// Create date
+				var date = document.createElement('h3');
+				date.className = 'newsletter-archive__date';
+				date.textContent = formattedDate;
+				// Create title
+				var title = document.createElement('h2');
+				title.className = 'newsletter-archive__title';
+				title.textContent = link.textContent;
+				// Destroy link contents
+				link.textContent = '';
+				// Create final DOM
+				link.className = 'newsletter-archive__link';
+				article.appendChild(date);
+				article.appendChild(title);
+				link.appendChild(article);
+				archive.appendChild(link);
+			});
+		</script>
+	</div>
 </section>
