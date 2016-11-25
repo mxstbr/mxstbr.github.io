@@ -9,7 +9,7 @@
 html {
     width: 100%;
     height: 100%;
-    font-size: 100%;
+    font-size: 18px;
     background-color: $background-color;
 }
 
@@ -28,8 +28,12 @@ body{
     padding: 0 1em;
 		max-width: 100%;
 		margin: 0 auto;
-    @include rem(margin-top, 9.5);
-    @include rem(margin-bottom, 4);
+    list-style: none;
+}
+
+.wrapper--content {
+  @include rem(margin-top, 9.5);
+  @include rem(margin-bottom, 4);
 }
 
 a {
