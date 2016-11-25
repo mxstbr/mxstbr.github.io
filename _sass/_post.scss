@@ -7,14 +7,6 @@
         }
     }
 
-    display: block;
-    width: 100%;
-    max-width: $max-width + 2em;
-    margin: 0 auto;
-    @include rem(margin-top, 9.5);
-    @include rem(margin-bottom, 5);
-    padding: 0 1em;
-
     a {
         color: $main-color;
         &:hover,

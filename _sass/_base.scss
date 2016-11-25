@@ -23,6 +23,15 @@ body{
     background-color: $background-color;
 }
 
+.wrapper {
+    width: $max-width + 2em;
+    padding: 0 1em;
+		max-width: 100%;
+		margin: 0 auto;
+    @include rem(margin-top, 9.5);
+    @include rem(margin-bottom, 4);
+}
+
 a {
     text-decoration: none;
     outline: none;

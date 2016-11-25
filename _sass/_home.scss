@@ -1,28 +1,6 @@
 // Home styles
 // ---------------------------------------/
 
-.title {
-    text-align: center;
-    font-family: Georgia, $serif;
-    color: $text-color;
-    font-weight: 400;
-    @include rem(margin-bottom, 0.01);
-}
-
-.tagline {
-    text-align: center;
-    font-family: $sans-serif;
-    @include rem(margin-top, 0.01);
-}
-
-.wrapper {
-    width: $max-width;
-		max-width: 100%;
-		margin: 0 auto;
-    @include rem(margin-top, 9.5);
-    @include rem(margin-bottom, 4);
-}
-
 .post-home {
 		display: flex;
     flex-direction: column;
