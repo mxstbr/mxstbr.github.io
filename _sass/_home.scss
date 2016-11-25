@@ -7,11 +7,19 @@
       text-decoration: none;
     }
 
+    &:hover &__title {
+      text-decoration-color: rgba($text-color, 1);
+      -webkit-text-decoration-color: rgba($text-color, 1);
+    }
+
     &__title {
         margin-top: 0;
 				margin-bottom: 0.5em;
         color: $text-color;
         text-decoration: underline;
+        text-decoration-color: rgba($text-color, 0.5);
+        -webkit-text-decoration-color: rgba($text-color, 0.5);
+        transition: text-decoration-color 0.2s;
 				@include rem(font-size, 1.1);
     }
 
