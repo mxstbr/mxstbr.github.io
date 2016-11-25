@@ -29,6 +29,10 @@
     @include rem(padding-top, 0.25);
     @include rem(padding-bottom, 0.25);
 
+    &__link:hover {
+      text-decoration: none;
+    }
+
     &__title {
         margin: 0;
         color: $text-color;
