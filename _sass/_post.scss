@@ -163,26 +163,54 @@
     }
 
     &__related {
-        clear: both;
-        width: 100%;
-        display: block;
-        overflow: auto;
+				clear: both;
+				width: 100%;
+
+				&:after {
+					content: "";
+	  			display: table;
+	  			clear: both;
+				}
 
         &-previous {
             float: left;
+            text-align: left;
+						max-width: 50%;
+						position: relative;
+						margin-left: 1.25em;
+
+            &:before {
+              content: "← ";
+							margin-right: 0.25em;
+							position: absolute;
+							left: -1.25em;
+							top: 50%;
+    					transform: translateY(-50%);
+            }
         }
 
         &-next {
             float: right;
+            text-align: right;
+						max-width: 50%;
+						position: relative;
+						margin-right: 1.25em;
+
+						&:after {
+              content: " →";
+							margin-left: 0.25em;
+							position: absolute;
+							right: -1.25em;
+							top: 50%;
+    					transform: translateY(-50%);
+            }
         }
     }
 
     p {
         word-wrap: break-word;
         hyphens: auto;
-        -webit-hyphens: auto;
         -moz-hyphens: auto;
         -ms-hyphens: auto;
-        -o-hyphens: auto;
     }
 }
