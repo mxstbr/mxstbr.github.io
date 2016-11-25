@@ -7,7 +7,12 @@ layout: default
   {% for post in paginator.posts %}
 		<a class="post-home__wrapper" href="{{ site.baseurl }}{{ post.url }}">
       <article class="card post-home">
-					<h3 class="post-home__date" itemprop="datePublished">{{ post.date | date: "%d %B %y" }}</h3>
+					<h3 class="post-home__date" itemprop="datePublished">
+            {% assign d = post.date | date: "%-d" %}
+            {{ post.date | date: "%B" }} 
+            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+            {{ post.date | date: "%Y" }}
+					</h3>
           <h2 class="post-home__title" itemprop="headline">{{ post.title | xml_escape }}</h2>
           <p class="post-home__excerpt">
 						{% if post.custom_excerpt %}

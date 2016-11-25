@@ -49,7 +49,7 @@
     }
 
 		&__date {
-			@include rem(font-size, 1);
+			@include rem(font-size, 0.9);
 			color: $light-text-color;
 			font-weight: 400;
 			margin: 0;
