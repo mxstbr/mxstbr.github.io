@@ -1,6 +1,6 @@
 ---
 published: true
-title: Inline Styles and CSS-in-JS are not the same thing
+title: Writing your styles in JS ≠ writing inline styles
 tags: styling react inline css-in-js
 ---
 
@@ -35,7 +35,9 @@ Inline styles only support a subset of CSS. Putting your styles inline into the 
 
 ## CSS-in-JS
 
-CSS-in-JS does not have native support in React, but there are lots of different libraries to make CSS-in-JS happen. CSS-in-JS libraries let you write your styles in JavaScript, but then they take those styles and inject an actual string of CSS in a `<style>` tag into the DOM.
+CSS-in-JS libraries let you write your styles in JavaScript too, just like inline styles, but then they take those styles and inject an actual string of CSS in a `<style>` tag into the DOM.
+
+CSS-in-JS does not have native support in React, but there are lots of different libraries to make CSS-in-JS happen.
 
 Let's take a look at what using CSS-in-JS looks like at the example of [`aphrodite`](https://github.com/khan/aphrodite):
 
