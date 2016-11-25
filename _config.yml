@@ -13,6 +13,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      excerpt_words: 25
 
 # Build settings
 markdown: kramdown

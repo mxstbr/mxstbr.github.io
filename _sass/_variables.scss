@@ -2,15 +2,16 @@
 // ---------------------------------------/
 
 // Colors
-$background-color: #FAFAFA;
+$background-color: #F6F6F6;
 $light-background-color: lighten($background-color, 1);
 $text-color: #262626;
+$light-text-color: lighten($text-color, 50);
 $code-color: #bf616a;
 $very-light-grey: darken($background-color, 3);
 $light-grey: darken($background-color, 15);
 $dark-grey: darken($background-color, 30);
 $main-color: #6CC0E5;
-$dark-main-color: darken($main-color, 7.5);
+$dark-main-color: darken($main-color, 15);
 
 // Typography
 $serif: 'Source Serif Pro', serif;

@@ -6,7 +6,7 @@ tags: css postcss
 
 There has been a lot of talk recently about a new CSS preprocessor called PostCSS.[^1] PostCSS is a wrapper for plugins which exposes an easy to use, but powerful API. Plugins can then use this API to change something in your CSS – or not. This makes PostCSS modular and extensible. While it is possible to [replicate other preprocessors features](https://github.com/jonathantneal/precss), PostCSS [can](https://github.com/anandthakker/doiuse) [do](https://github.com/MohammadYounes/rtlcss) [so](https://github.com/jonathantneal/postcss-font-magician) [much](https://github.com/postcss/autoprefixer) [more](http://cssnano.co/optimisations/).
 
-Using PostCSS is as easy as including it into your build system. There are integrations with all the popular ones, so there is no excuse not to use it. The harder part is choosing from the wealth of plugins. [PostCSS.parts](http://postcss.parts) helps searching for features you want to add to your CSS. 
+Using PostCSS is as easy as including it into your build system. There are integrations with all the popular ones, so there is no excuse not to use it. The harder part is choosing from the wealth of plugins. [PostCSS.parts](http://postcss.parts) helps searching for features you want to add to your CSS.
 
 To get you started with PostCSS, here are my must-have plugins for every project:
 
@@ -20,12 +20,12 @@ Wherever you use a `:hover` in your CSS, you should add a `:focus` as well.[^2] 
 Making sure your page looks the same no matter which browser/device it is viewed on is very important today. Vendor prefixes and browser fallbacks are a big part of doing that. Sadly, there are a lot of them and I tend to forget them. [`autoprefixer`](https://github.com/postcss/autoprefixer) takes care of prefixing your CSS based on browser usage data. This means you can focus on the styling, and let `autoprefixer` take care of cross-platform quirks.
 
 4. `doiuse`
-You might have certain browser versions you want to support on your website. [`doiuse`](https://github.com/anandthakker/doiuse) checks your CSS and warns you if you use a feature that is not supported by the minimum browser support you specify. 
+You might have certain browser versions you want to support on your website. [`doiuse`](https://github.com/anandthakker/doiuse) checks your CSS and warns you if you use a feature that is not supported by the minimum browser support you specify.
 
 5. `cssnano`
 Optimising your CSS is vital. Performance is a big topic around the front-end development world, and delivering the least amount of data possible is crucial. [`cssnano`](https://github.com/ben-eb/cssnano) is a collection of various PostCSS plugins that make your code as small as possible. The most obvious one is whitespace removal, but `cssnano` also renames custom identifiers (e.g. animation names), merges adjacent rules and more.
 
-These five plugins will give you a head start for developing performant, cross-browser compatible styling. Even with these heavy hitting tasks, compilation times are smaller than what they were using other preprocessors. 
+These five plugins will give you a head start for developing performant, cross-browser compatible styling. Even with these heavy hitting tasks, compilation times are smaller than what they were using other preprocessors.
 
 [^1]: Yes, [PostCSS is a preprocessor](https://css-tricks.com/the-trouble-with-preprocessing-based-on-future-specs/)
 
