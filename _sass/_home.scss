@@ -2,20 +2,9 @@
 // ---------------------------------------/
 
 .post-home {
-		display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 1.5em 1em;
-    margin: 2em 0;
-
     &__wrapper:hover,
 		&__wrapper:focus {
       text-decoration: none;
-    }
-
-    &__title-wrapper {
-      display: flex;
-      flex-direction: row;
     }
 
     &__title {

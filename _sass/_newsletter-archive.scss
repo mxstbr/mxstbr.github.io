@@ -1,0 +1,27 @@
+.newsletter-archive {
+	display: flex;
+	color: $text-color;
+	margin: 0.5em 0;
+
+	&:hover &__title {
+		text-decoration: underline;
+	}
+
+	&__link:hover {
+		text-decoration: none;
+	}
+
+	&__date {
+		display: inline-block;
+		font-size: 1em;
+		font-weight: 400;
+		margin: 0;
+	}
+
+	&__title {
+		display: inline-block;
+		font-size: 1em;
+		margin: 0;
+		margin-left: 0.5em;
+	}
+}

@@ -31,19 +31,19 @@ layout: default
 
 			// Build DOM back together
 			var article = document.createElement('article');
-			article.className = 'post-home';
+			article.className = 'newsletter-archive';
 			// Create date
 			var date = document.createElement('h3');
-			date.className = 'post-home__date';
+			date.className = 'newsletter-archive__date';
 			date.textContent = formattedDate;
 			// Create title
 			var title = document.createElement('h2');
-			title.className = 'post-home__title';
+			title.className = 'newsletter-archive__title';
 			title.textContent = link.textContent;
 			// Destroy link contents
 			link.textContent = '';
 			// Create final DOM
-			link.className = 'post-home__link';
+			link.className = 'newsletter-archive__link';
 			article.appendChild(date);
 			article.appendChild(title);
 			link.appendChild(article);
