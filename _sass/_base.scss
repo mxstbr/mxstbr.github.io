@@ -118,7 +118,7 @@ code {
 pre {
     display: block;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1.3em;
     padding: 1em;
     font-size: .8em;
     line-height: 1.4;
@@ -139,14 +139,6 @@ pre code {
 }
 a > code {
     text-decoration: underline;
-}
-
-.highlight {
-    margin-bottom: 1em;
-    border-radius: 4px;
-}
-.highlight pre {
-    margin-bottom: 0;
 }
 
 /* Gist via GitHub Pages */

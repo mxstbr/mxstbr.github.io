@@ -5,37 +5,32 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 p {
     line-height: 1.5em;
     font-size: 1em;
+    margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  font-family: $sans-serif;
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 h1 {
-    font-family: $sans-serif;
-    @include rem(font-size, 2);
-    /* 2x body copy size = 32px */
-    line-height: 1.25em;
-    /* 45px / 36px */
+  margin-top: 0;
+  font-size: 2.074em;
 }
 
 h2 {
-    font-family: $sans-serif;
-    @include rem(font-size, 1.625);
-    /* 1.625x body copy size = 26px */
-    line-height: 1.15384615em;
-    /* 30px / 26px */
+  font-size: 1.728em;
 }
 
 h3 {
-    font-family: $sans-serif;
-    @include rem(font-size, 1.375);
-    /* 1.375x body copy size = 22px */
-    line-height: 1.13636364em;
-    /* 25px / 22px */
+  font-size: 1.44em;
 }
 
 h4 {
-    font-family: $sans-serif;
-    @include rem(font-size, 1.125);
-    /* 1.125x body copy size = 18px */
-    line-height: 1.11111111em;
+  font-size: 1.2em;
 }
 
 blockquote {
