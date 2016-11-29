@@ -14,9 +14,9 @@ $main-color: #6CC0E5;
 $dark-main-color: darken($main-color, 15);
 
 // Typography
-$serif: Georgia, Times, "Times New Roman", serif;
+$serif: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 $sans-serif: 'Source Sans Pro', sans-serif;
-$monospace: "Inconsolata", "Courier New", Menlo, Courier, monospace;
+$monospace: Consolas, monaco, monospace;
 
 // Sizes
 $max-width: 28em;

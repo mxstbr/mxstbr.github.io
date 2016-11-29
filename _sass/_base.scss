@@ -107,7 +107,9 @@ pre {
 }
 code {
     padding: 0em .3em;
+    padding-top: 0.15em;
     font-size: 0.8em;
+    line-height: 0.8em;
     color: $code-color;
     background-color: $very-light-grey;
     border: 1px solid $light-grey;
