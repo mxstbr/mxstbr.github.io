@@ -7,20 +7,8 @@
         }
     }
 
-    a {
-        color: $main-color;
-        &:hover,
-        &:visited {
-            color: darken($main-color, 25);
-        }
-    }
-
     hr {
         margin: 2em 0;
-    }
-
-    h1, h2, h3, h4 {
-        margin-bottom: 0.5em;
     }
 
     img {
@@ -55,27 +43,15 @@
         font-size: 1em;
     }
 
-    & .post__date {
-        // Overriding the .post h1 margin-bottom, see line 90
-        margin-bottom: 1.75em;
-    }
-
     &__title {
-        margin: 0;
-        display: block;
+        margin: 0.3em 0;
         color: $text-color;
         padding: 0;
-        font-family: $sans-serif;
         text-align: center;
 
         & + hr {
             margin: 0;
         }
-    }
-
-    & .post__title {
-        // Overriding the .post h1 margin-bottom, see line 90
-        margin-bottom: 0.2em;
     }
 
     &__categories {

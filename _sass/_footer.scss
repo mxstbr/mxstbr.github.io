@@ -19,10 +19,9 @@ footer ul li {
 
 	a {
 		color: $text-color;
-		transition: color 150ms;
 
 		&:hover {
-			color: darken($main-color,30);
+			text-decoration: underline;
 		}
 	}
 }
