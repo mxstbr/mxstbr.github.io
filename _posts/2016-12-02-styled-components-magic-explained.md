@@ -85,7 +85,7 @@ logArgs`I like ${favoriteFood}.`
 
 This is where it gets really interesting; as you can see we didn't just get a single string saying `"I like pizza"`. (like we did when we called it with parenthesis)
 
-We still get an array as the first argument, which now has two elements: the part of the string before the interpolation as the first element and the part after the interpolation as the second element. The third argument is the interpolated content.
+We still get an array as first argument, which now has two elements: the `I like` part right before the interpolation as first element and the `.` after the interpolation as second element. The interpolated content `favoriteFood` is now assigned as the second argument.
 
 As you can see, the big difference is that by calling `logArgs` as a tagged template literal we get our template literal all split up, with the raw text first in an array and then the interpolation.
 
