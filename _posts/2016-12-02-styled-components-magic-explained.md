@@ -20,13 +20,15 @@ This `Button` variable is now a React component you can render anywhere in your 
 <Button>Hi Dad!</Button>
 ```
 
-So, how the does this work? What kind of transpiler babel thing do you need to make this work?
+So, how the does this work? What kind of transpiler babel webpack magic thing do you need to make this work?
 
 ## Tagged Template Literals
 
 As it turns out, this weird <code>styled.button``</code> notation is actually part of JavaScript, the language! It's a new feature called a "Tagged Template Literal" introduced in ES6.
 
-Essentially, it's just calling a function – <code>styled.button``</code> and <code>styled.button()</code> are almost the same thing! The difference becomes visible as soon as you pass in arguments though. Let's create a simple function to examine this:
+Essentially, it's just calling a function – <code>styled.button``</code> and <code>styled.button()</code> are almost the same thing! The differences become visible as soon as you pass in arguments though.
+
+Let's create a simple function to explore this:
 
 ```javascript
 const logArgs = (...args) => console.log(...args)
@@ -83,7 +85,7 @@ logArgs`I like ${favoriteFood}.`
 
 This is where it gets really interesting; as you can see we didn't just get a single string saying `"I like pizza"`. (like we did when we called it with parenthesis)
 
-We still get an array as the first argument, which now has two elements: the part of the string before the interpolation as the first element and the part after the interpolation as the second element. The third argument was the interpolation content.
+We still get an array as the first argument, which now has two elements: the part of the string before the interpolation as the first element and the part after the interpolation as the second element. The third argument is the interpolated content.
 
 As you can see, the big difference is that by calling `logArgs` as a tagged template literal we get our template literal all split up, with the raw text first in an array and then the interpolation.
 
@@ -115,7 +117,7 @@ We just get one big string, everything mushed together.
 
 That's nice and all, so we can now call functions with backticks and the arguments are slightly different, whahooo. What's the big deal?
 
-Well, as it turns out this enables some cool explorations. Let's take a look at `styled-components` as an example of a use case.
+Well, as it turns out this enables some cool explorations. Let's take a look at [`styled-components`](https://styled-components.com) as an example of a use case.
 
 With React components, you expect to be able to adjust their styling via their props. Imagine a `<Button />` component for example that should look bigger when passed the `primary` prop like so: `<Button primary />`.
 
@@ -137,7 +139,7 @@ This `Button` will now have a font size of 2em if it's a primary button, and a f
 <Button />
 ```
 
-Let's go back to our `logArgs` function, and try calling it with parenthesis and a template literal with an interpolated function. What do we get passed?
+Let's go back to our `logArgs` function. Let's try calling it with a template literal with an interpolated function, just like above `styled.button` except we don't make it a tagged template literal. What do we get passed?
 
 ```javascript
 logArgs(`Test ${() => console.log('test')}`)
@@ -178,7 +180,7 @@ execFuncArgs('a', () => { console.log('another one') })
 // -> "another one"
 ```
 
-Let's try calling it with parenthesis abd a template literal with an interpolated function again:
+Let's try calling it with parenthesis and a template literal with an interpolated function again:
 
 ```javascript
 execFuncArgs(`Hi, ${() => { console.log('Executed!') }}`)
