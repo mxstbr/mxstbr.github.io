@@ -200,4 +200,4 @@ Contrary to before, what `execFuncArgs` gets passed as the second argument here 
 
 `styled-components` under the hood does exactly this! At render time we pass the props into all interpolated functions to allow users to change the styling based on the props.
 
-Tagged template literals enable the `styled-c	omponents` API, without them it could (literally!) not exist. I'm very excited to see what other use cases people come up with for them!
+Tagged template literals enable the `styled-components` API. Without them it would (literally!) not exist. I'm very excited to see what other use cases people come up with for them!
