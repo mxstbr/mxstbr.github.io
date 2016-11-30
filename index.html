@@ -5,26 +5,28 @@ layout: default
 <section class="wrapper wrapper--content">
   <h2 style="display: none;">Posts</h2>
   {% for post in paginator.posts %}
-		<a class="post-home__wrapper" href="{{ site.baseurl }}{{ post.url }}">
-      <article class="card post-home">
-					<h3 class="post-home__date" itemprop="datePublished">
-            {% assign d = post.date | date: "%-d" %}
-            {{ post.date | date: "%B" }}
-            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
-            {{ post.date | date: "%Y" }}
-					</h3>
-          <h2 class="post-home__title" itemprop="headline">{{ post.title | xml_escape }}</h2>
-          <p class="post-home__excerpt">
-						{% if post.custom_excerpt %}
-							{{ post.custom_excerpt }}
-						{% else %}
-							{{ post.excerpt | strip_html | strip_newlines | truncatewords: post.excerpt_words }}
-						{% endif %}
-					</p>
-          <!-- {% for tag in post.tags %}
-            <h3 class="post-home__category">#{{ tag | downcase }}</h3>
-          {% endfor %} -->
-      </article>
-		</a>
+    {% if post.hidden != true %}
+  		<a class="post-home__wrapper" href="{{ site.baseurl }}{{ post.url }}">
+        <article class="card post-home">
+  					<h3 class="post-home__date" itemprop="datePublished">
+              {% assign d = post.date | date: "%-d" %}
+              {{ post.date | date: "%B" }}
+              {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+              {{ post.date | date: "%Y" }}
+  					</h3>
+            <h2 class="post-home__title" itemprop="headline">{{ post.title | xml_escape }}</h2>
+            <p class="post-home__excerpt">
+  						{% if post.custom_excerpt %}
+  							{{ post.custom_excerpt }}
+  						{% else %}
+  							{{ post.excerpt | strip_html | strip_newlines | truncatewords: post.excerpt_words }}
+  						{% endif %}
+  					</p>
+            <!-- {% for tag in post.tags %}
+              <h3 class="post-home__category">#{{ tag | downcase }}</h3>
+            {% endfor %} -->
+        </article>
+  		</a>
+    {% endif %}
   {% endfor %}
 </section>
