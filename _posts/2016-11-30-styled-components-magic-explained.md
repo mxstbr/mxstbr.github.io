@@ -15,7 +15,7 @@ const Button = styled.button`
 `
 ```
 
-This `Button` variable is now a React component you can render anywhere in your application!
+This `Button` variable is now a React component you can render just like any other React component!
 
 ```html
 <Button>Hi Dad!</Button>
