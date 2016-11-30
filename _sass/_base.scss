@@ -51,14 +51,8 @@ body{
 }
 
 a {
-    text-decoration: none;
-    outline: none;
+    text-decoration: underline;
     color: $dark-main-color;
-
-    &:hover,
-    &:focus {
-        text-decoration: underline;
-    }
 }
 
 p {
@@ -111,9 +105,8 @@ code {
     padding-top: 0.15em;
     font-size: 0.8em;
     line-height: 0.8em;
-    color: $code-color;
+    color: inherit;
     background-color: $very-light-grey;
-    border: 1px solid $light-grey;
     border-radius: 3px;
 }
 pre {
@@ -135,7 +128,6 @@ pre code {
     color: inherit;
     background-color: transparent;
     border: none;
-    letter-spacing: -0.03em;
     font-size: 1em;
 }
 a > code {
