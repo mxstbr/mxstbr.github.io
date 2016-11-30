@@ -1,5 +1,6 @@
 ---
 published: true
+hidden: true
 title: Linting styles in JavaScript with stylelint
 tags: stylelint postcss
 ---

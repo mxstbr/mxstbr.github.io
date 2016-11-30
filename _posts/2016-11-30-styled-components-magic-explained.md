@@ -1,5 +1,6 @@
 ---
 published: true
+hidden: true
 title: The magic that makes 💅 styled-components work
 tags: styling react styled-components
 ---
