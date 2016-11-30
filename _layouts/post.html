@@ -6,7 +6,7 @@ layout: default
 	<header>
 		<h1 class="post__title" itemprop="headline">{{ page.title | xml_escape }}</h1>
 		<hr />
-		<h2 class="post__date" itemprop="datePublished">{{ page.date | date_to_long_string }}</h2>
+		<h2 class="post__date" itemprop="datePublished">{% include date.html date=page.date %}</h2>
 	</header>
 
 	{{ content }}
