@@ -4,7 +4,7 @@ url-title: "Max Stoibers Blog"
 description: "Fresh thinking and expert tips about HTML, CSS, JavaScript and other web technologies."
 paginate: 100
 url: "http://mxstbr.blog"
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 future: false
 defaults:
   -
