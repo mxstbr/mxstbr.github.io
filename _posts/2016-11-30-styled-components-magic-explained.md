@@ -1,6 +1,6 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: The magic behind 💅 styled-components
 tags: styling react styled-components
 custom_excerpt: Never seen that magic backtick styled.div`` notation? It's actually just JavaScript, no fancy transpiler needed! What that is, how it works and what it does? Let's find out!
