@@ -7,11 +7,11 @@ tags: productivity hack
 
 Just like everybody else I have unproductive days sometimes, doing nothing except watching videos all day long. (my girlfriend can attest to that...) After one of those days I always feel horrible for procrastinating and not getting anything done.
 
-After a particularly unproductive week, I noticed a tiny thing that helped me get back on track for an entire day:
+After a particularly unproductive week, I noticed a tiny thing:
 
-**Not looking at my phone first thing in my morning**
+**Not looking at my phone first thing in my morning makes for a much more productive day**
 
-It sounds ridiculously simple (it is), but it makes my days so much more productive.
+If that sounds ridiculously simple that's because it is.
 
 When I manage to avoid Twitter, Facebook, etc. in the morning, somehow I don't feel as pressured to check social networks the entire day. (I do check them, but much less)
 
