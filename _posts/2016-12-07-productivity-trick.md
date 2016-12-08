@@ -1,6 +1,6 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: My one weird trick to be more productive
 tags: productivity hack
 ---
