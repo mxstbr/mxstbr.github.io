@@ -26,7 +26,7 @@ Leveraging the power and ecosystem of `stylelint` to allow developers to lint th
 
 ## First try
 
-My first idea was to leverage the power of `eslint`, the JavaScript linter, to parse the JavaScript and then run `stylelint` from there on the CSS string. A lot of people already use and rely on `eslint`, so providing an eslint rule that does this would be easy to adopt and use.
+The first idea was to leverage the power of `eslint`, the JavaScript linter, to parse the JavaScript and then run `stylelint` from there on the extracted CSS string. A lot of people already use and rely on `eslint`, so providing an eslint rule that does this would make it easy to adopt and use.
 
 Sadly, that doesn't work. I built a first prototype, but for some reason the stylelint results weren't coming back to the CLI from `eslint`! I asked around and somebody in the `eslint` Gitter chatroom explained to me why:
 
