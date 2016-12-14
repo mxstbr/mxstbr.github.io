@@ -61,6 +61,11 @@ p {
     @include rem(font-size, 1);
 }
 
+video {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
 // Override the embedded tweet styling
 .twitter-tweet {
   margin-bottom: 1em !important;
@@ -70,8 +75,14 @@ p {
 
 /* Lists */
 ul, ol, dl {
-    margin-top: 0;
-    margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+
+li {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 dt {
