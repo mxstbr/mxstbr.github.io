@@ -3,6 +3,7 @@ published: true
 hidden: true
 title: Linting styles in JavaScript with stylelint
 tags: stylelint postcss
+custom_excerpt: The defacto standard for linting CSS code is stylelint. How can we leverage the large amount of existing rules and the vibrant ecosystem to lint CSS strings inside JavaScript files?
 ---
 
 I recently co-created a styling library for React called [`styled-components`](https://styled-components.com), which let's you write actual CSS in your JavaScript. The issue is that you write this CSS inside strings and without selectors:
