@@ -22,9 +22,7 @@ const Button = styled.button`
 
 [`stylelint`](http://stylelint.io) is a linter for CSS, meaning it helps you make sure you're writing good code. It's like `eslint`, except for CSS instead of JS. `stylelint` has a huge amount of rules and a vibrant ecosystem, which means it's the best choice for CSS linting right now.
 
-I wanted to leverage the power and ecosystem of `stylelint` to allow developers to lint their CSS in `styled-components`.
-
-How can we make `stylelint` lint this CSS?
+Leveraging the power and ecosystem of `stylelint` to allow developers to lint their CSS in `styled-components` seems like a great thing to do! How can we make that happen?
 
 ## First try
 
