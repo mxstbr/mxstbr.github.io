@@ -61,6 +61,12 @@ p {
     @include rem(font-size, 1);
 }
 
+// Override the embedded tweet styling
+.twitter-tweet {
+  margin-bottom: 1em !important;
+  margin-top: 0 !important;
+}
+
 
 /* Lists */
 ul, ol, dl {
