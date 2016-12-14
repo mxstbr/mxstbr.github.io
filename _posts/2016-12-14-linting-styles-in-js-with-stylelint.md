@@ -28,11 +28,14 @@ Leveraging the power and ecosystem of `stylelint` to allow developers to lint th
 
 The first idea was to leverage the power of `eslint`, the JavaScript linter, to parse the JavaScript and then run `stylelint` from there on the extracted CSS string. A lot of people already use and rely on `eslint`, so providing an eslint rule that does this would make it easy to adopt and use.
 
-Sadly, that doesn't work. I built a first prototype, but for some reason the stylelint results weren't coming back to the CLI from `eslint`! I asked around and somebody in the `eslint` Gitter chatroom explained to me why:
+Sadly, that doesn't work. After building a first prototype I noticed that for some unknown reason the stylelint results weren't coming back to the CLI. I was executing `stylelint` on the right code, but the user couldn't see the result! I asked around and somebody in the `eslint` Gitter chatroom explained to me why:
 
 **`eslint` rules have to be sync, but `stylelint` has to be run async.**
 
-Ugh, super annoying! Back to the drawing board. As always, I sent out a frustrated tweet on [Twitter](https://twitter.com/mxstbr). Somebody helpfully replied that I should check out `stylelint` processors, since they seem to be exactly for my use case!
+Ugh, super annoying! I sent out [a frustrated tweet on Twitter](https://twitter.com/mxstbr/status/788738889297068032), to which thankfully [@stylelint](https://twitter.com/stylelint) replied quickly:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/mxstbr">@mxstbr</a> <a href="https://twitter.com/andreysitnik">@andreysitnik</a> How about writing a stylelint processor that finds these strings and passes them to stylelint?</p>&mdash; stylelint (@stylelint) <a href="https://twitter.com/stylelint/status/788795790433001472">October 19, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Huh, processors? Never heard of those...
 
@@ -42,7 +45,7 @@ As it turns out, `stylelint` has support for custom ["processors"](http://stylel
 
 One of the most common use cases would be linting CSS inside HTML (in `<style>` tags) or Markdown. (in code blocks) There are processors [for](https://github.com/mapbox/stylelint-processor-markdown) [that](https://github.com/ccbikai/stylelint-processor-html/blob/master/index.js), which basically take the HTML/Markdown file you pass to `stylelint`, parse it, take the CSS code from the `<style>` tags or fenced code blocks, and pass it to `stylelint`.
 
-That sounds exactly like what I need! How do I write one?!
+That sounds exactly like what we need! How do I write one?!
 
 ### Writing a processor
 
