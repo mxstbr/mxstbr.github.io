@@ -3,6 +3,7 @@ published: true
 hidden: false
 title: Linting styles in JavaScript with stylelint
 tags: stylelint postcss
+image: stylelint-meta.png
 custom_excerpt: The defacto standard for linting CSS code is stylelint. How can we leverage the large amount of existing rules and the vibrant ecosystem to lint CSS strings inside JavaScript files?
 ---
 
