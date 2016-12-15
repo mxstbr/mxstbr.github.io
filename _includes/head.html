@@ -2,7 +2,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	{% comment %}
+		Title/Description
+	{% endcomment %}
   <title>{% if page.title %}{{ page.title }} - {{ site.url-title }}{% else %}{{ site.url-title }} - {{ site.description }}{% endif %}</title>
   <meta name="description" content="{% if page.custom_excerpt %}{{ page.custom_excerpt | strip_html | strip_newlines }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta content="{{ site.title }}" property="og:site_name">
@@ -24,6 +26,9 @@
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     <meta content="http://mxstbr.com" property="article:author">
   {% endif %}
+	{% comment %}
+		Open Graph
+	{% endcomment %}
   {% if page.image %}
     <meta content="{{ site.url }}/img/{{ page.image }}" property="og:image">
   {% else %}
@@ -39,8 +44,11 @@
     <meta content="{{ tag }}" property="article:tag">
     {% endfor %}
   {% endif %}
-  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} — Feed" href="{{ site.baseurl }}/feed.atom" />
+	{% comment %} Twitter {% endcomment %}
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@mxstbr">
 
+	<link rel="alternate" type="application/atom+xml" title="{{ site.name }} — Feed" href="{{ site.baseurl }}/feed.atom" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" type="image/x-icon" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/favicon.png">
