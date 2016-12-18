@@ -66,6 +66,17 @@ video {
   margin-bottom: 1em;
 }
 
+figure {
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+figcaption {
+  font-style: italic;
+  color: $dark-grey;
+  text-align: center;
+}
+
 // Override the embedded tweet styling
 .twitter-tweet {
   margin-bottom: 1em !important;

@@ -34,6 +34,10 @@
         color: $dark-grey;
     }
 
+		&__header {
+			margin-bottom: 1.3em;
+		}
+
     &__date {
         color: $dark-grey;
         font-family: $sans-serif;
