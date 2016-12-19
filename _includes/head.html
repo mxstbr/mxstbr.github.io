@@ -45,7 +45,7 @@
     {% endfor %}
   {% endif %}
 	{% comment %} Twitter {% endcomment %}
-	<meta name="twitter:card" content="summary">
+	<meta name="twitter:card" content="{% if page.twitter_large %}summary_large_image{% else %}summary{% endif %}">
 	<meta name="twitter:site" content="@mxstbr">
 
 	<link rel="alternate" type="application/atom+xml" title="{{ site.name }} — Feed" href="{{ site.baseurl }}/feed.atom" />
