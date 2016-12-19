@@ -23,7 +23,7 @@ layout: null
 
 
 {% for post in site.posts %}
-    {% if post.title != null and post.title != empty %}
+    {% if post.title != null and post.title != empty and post.hidden != true %}
     {% unless first %},{% endunless %}{
         "title": {{post.title | jsonify}},
         "content": {{post.content | markdownify | strip_html | jsonify}},
@@ -37,7 +37,7 @@ layout: null
 {% endfor %}
 
 {% for page in site.pages %}
-    {% if page.title != null and page.title != empty %}
+    {% if page.title != null and page.title != empty and page.hidden != true %}
     {% unless first %},{% endunless %}{
         "title": {{page.title | jsonify}},
         "content": {{page.content | strip_html | jsonify}},
