@@ -186,3 +186,33 @@
         -ms-hyphens: auto;
     }
 }
+
+.share-on-twitter {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transform: translateY(0) translateX(calc((100vw - #{$max-width + 2em} - 150%) / -4));
+    opacity: 1;
+    padding: 0.5em 1em;
+    background-color: white;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid $very-light-grey;
+    border-bottom: none;
+    color: $dark-grey;
+    transition: border-color 50ms ease-out, color 50ms ease-out, transform 250ms ease-in-out;
+}
+
+.share-on-twitter:hover {
+    color: $text-color;
+    border-color: $light-grey;
+}
+
+.share-on-twitter.hidden {
+    transform: translateY(2.5em) translateX(calc((100vw - #{$max-width + 2em} - 150%) / -4));
+}
+
+@media screen and (max-width: 950px) {
+    .share-on-twitter {
+        display: none;
+    }
+}

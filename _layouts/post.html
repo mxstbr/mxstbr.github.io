@@ -31,4 +31,6 @@ layout: default
 		{% endif %}
 	</div>
 
+	<a href="https://twitter.com/intent/tweet?original_referer={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;text={{ page.title | uri_escape }}&amp;tw_p=tweetbutton&amp;url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;via=mxstbr" rel="nofollow" target="_blank" class="share-on-twitter hidden" onclick="OWATracker.trackAction('post', 'click', 'tweet-this');">Tweet this article</a>
+
 </article>
