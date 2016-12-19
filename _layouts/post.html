@@ -25,7 +25,9 @@ layout: default
 			<a href="{{ page.previous.url }}" class="post__related-previous" onclick="OWATracker.trackAction('post', 'click', 'previous');" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
 		{% endif %}
 		{% if page.next %}
-			<a href="{{ page.next.url }}" class="post__related-next" onclick="OWATracker.trackAction('post', 'click', 'next');" title="{{ page.next.title }}">{{ page.next.title }}</a>
+			{% if page.next.hidden != true %}
+				<a href="{{ page.next.url }}" class="post__related-next" onclick="OWATracker.trackAction('post', 'click', 'next');" title="{{ page.next.title }}">{{ page.next.title }}</a>
+			{% endif %}
 		{% endif %}
 	</div>
 
