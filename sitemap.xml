@@ -11,13 +11,13 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- Posts -->{% for post in site.posts %}
+    <!-- Posts -->{% for post in site.posts %}{% if post.hidden != true %}
     <url>
         <loc>{{ site.url }}{{ post.url }}</loc>
         <lastmod>{% if post.updated == null %}{{ post.date | date_to_xmlschema }}{% else %}{{ post.updated | date_to_xmlschema }}{% endif %}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-    </url>{% endfor %}
+    </url>{% endif %}{% endfor %}
 
     <!-- Pages -->{% for node in site.pages %}{% comment %}
     {% endcomment %}{% capture path %}{{ node.path | split:'/' | first }}{% endcapture %}{% comment %}
