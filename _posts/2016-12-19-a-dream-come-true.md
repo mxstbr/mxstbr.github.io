@@ -5,9 +5,10 @@ title: "2016 in review: A dream come true"
 tags: 2016 review
 twitter_large: true
 image: open-source-sentry.jpg
+custom_excerpt: "What happened in 2016? This is my story, full of open source, travel and tweets. How did react-boilerplate, styled-components and Carte Blanche come to be?"
 ---
 
-Originally this review was meant to solely be about 2016, but as it started coming along I noticed that the story didn't make any sense without any context. So, I'll start from the beginning – my time in London.
+Originally this review was meant to solely be about 2016, but as it started coming along I noticed that the narrative didn't make any sense without any context. So, I'll start from the beginning – my time in London.
 
 ## Animade
 
@@ -168,3 +169,7 @@ I love looking at random statistics, so here are some numbers from this year:
 - GitHub contributions: 4,000
 - PRs opened: 450
 - Issues opened: 375
+
+<br />
+
+*If you liked this year in review, I'd appreciate you <a href="https://twitter.com/intent/tweet?original_referer={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;text={{ page.title | uri_escape }}&amp;tw_p=tweetbutton&amp;url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;via=mxstbr" rel="nofollow" target="_blank" title="tweeting">tweeting</a> it to your followers! Thanks!*
