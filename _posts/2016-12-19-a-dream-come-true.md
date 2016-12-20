@@ -140,7 +140,8 @@ For 2017 I want to do more of the things that make me happy:
 
 - Collaborate with rad people on interesting ideas and libraries
 - Explore new areas and expand my horizon beyond React and JavaScript (P2P, ReasonML,...)
-- Write more articles (the goal: 50 posts in 2017)
+- Write more articles (goal: 50 posts in 2017)
+- Consistenly [send out newsletters](/newsletter/) and establish them as my place to share more personal, long-form thoughts (goal: one newsletter every week)
 - Go skiing more often
 
 I also want to travel a bit less, as this year was quite exhausting. I'll still be speaking at a few conferences, but I'm looking forward to being home for longer than a week and spending quality time with my girlfriend.
@@ -169,7 +170,3 @@ I love looking at random statistics, so here are some numbers from this year:
 - GitHub contributions: 4,000
 - PRs opened: 450
 - Issues opened: 375
-
-<br />
-
-*If you liked this year in review, I'd appreciate you <a href="https://twitter.com/intent/tweet?original_referer={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;text={{ page.title | uri_escape }}&amp;tw_p=tweetbutton&amp;url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;via=mxstbr" rel="nofollow" target="_blank" title="tweeting">tweeting</a> it to your followers! Thanks!*
