@@ -129,6 +129,14 @@ To top it off, Glen had the idea to do a Steve Jobs-style "One more thing..." re
 
 The library was well received and is now used by a lot of people all around the globe which is great! We aren't nearly done yet though, there's some big things on the horizon for early 2017 that I'm super excited about and can't wait to show you!
 
+## Being featured in Forbes
+
+In October, Forbes Austria picked up on my story. They asked some friends, and then featured me in the November issue:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m featured in the new <a href="https://twitter.com/Forbesaustria">@ForbesAustria</a> issue! 🎉😍✨<br><br>Get in in your local Trafik or on <a href="https://t.co/MpNDLY5ncZ">https://t.co/MpNDLY5ncZ</a> and send me a pic! (print only) <a href="https://t.co/Dld4G2KXf6">pic.twitter.com/Dld4G2KXf6</a></p>&mdash; Max Stoiber @ 🇦🇹 (@mxstbr) <a href="https://twitter.com/mxstbr/status/795555176203620353">November 7, 2016</a></blockquote>
+
+To this day this feels totally unreal to me. Even though it happened and is awesome it boggles my mind.
+
 ## The Future
 
 If you would've told me this whole story two years ago, I would've laughed in your face and called it a dream. That's still what it feels like every day – I get to do the work I enjoy most with awesome people I like, and I'm being paid to do so!
