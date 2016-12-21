@@ -12,7 +12,7 @@ Originally this review was meant to solely be about 2016, but as it started comi
 
 ## Animade
 
-My story starts at the beginning of 2015, a few months after I started to study computer science for the first time. I had been playing around with HTML and CSS next to university, and enjoyed that much more than the course work. I decided I wanted to become an employable front-end developer, so I quit university and went London for a three month internship at [Animade](http://animade.tv).
+My story starts at the beginning of 2015, a few months after I started to study computer science for the first time. Writing some HTML and CSS next to university I noticed my much bigger enthusiasm for the web than the course work. Thus, I decided to become an employable front-end developer, so I took a break from university and went to London for a three month internship at [Animade](http://animade.tv).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Packing for my internship in London <a href="https://twitter.com/animadetv">@animadetv</a>, having a hard time to decide what to take and what to leave...</p>&mdash; Max Stoiber (@mxstbr) <a href="https://twitter.com/mxstbr/status/556401046550245376">January 17, 2015</a></blockquote>
 
@@ -22,24 +22,23 @@ After two months of learning from the awesome folks there I was quite proficient
 
 I dove into tutorials and the documentation, and built a tiny [marketing project](http://frankensim.animade.tv) with React, Flux and Grunt. (props to [Milo Targett](https://twitter.com/milotargett) for coming up with the idea and illustrations)
 
-After the internship I wanted to keep getting better at React, so I built a [personal side project](http://sharingbuttons.io) with it. As I was building that, I noticed that I was spending the same amount of time doing the exact same things at the start; creating all the necessary folders and scaffolding to get started with actually building my app. After I had done just the setup I thought "I should save this somewhere", copy and pasted that tiny folder structures into a separate folder and pushed it up to GitHub.
+After the internship I wanted to keep getting better at React, so I built a [personal side project](http://sharingbuttons.io) with it. Noticing that I was spending the same amount of time doing the exact same things at the start, creating all the necessary folders and scaffolding to get started with actually building my app, I thought "I should save this somewhere". I copy and pasted that tiny folder structure and pushed it up to GitHub.
 
 Little did I know that this tiny, personal "open source project" (read: repo on GitHub) would go on to have 11,000 stars, be used by a ton of companies big and small in important projects, and see hundreds of people from all around the world contribute to it.
 
 But I'm jumping ahead of myself here.
 
-As the second half of 2015 rolls around I try (again) to study Computer Science at the local technical university, but my joy of programming is sadly not accompanied by a joy for converting numbers from the binary to the decimal system and back (much to the dismay of my parents). I'm still keeping up and writing good grades (acing the one actual programming course, an introduction to Java), but in reality I'm spending most of my time doing what I love – writing HTML, CSS and JS.
+As the second half of 2015 rolls around, I try (again) to study Computer Science at the local technical university, but my joy of programming is sadly not accompanied by a joy for converting numbers from the binary to the decimal system and back (much to the dismay of my parents). I'm still keeping up and writing good grades (acing the one actual programming course, an introduction to Java), but in reality I'm spending most of my time doing what I love – writing HTML, CSS and JS.
 
-It's Christmas (almost exactly a year ago now), and I'm out skiing with my family, our annual holiday. Unbeknownst to me something is about to happen that will change the course of my life forever.
+It's Christmas (almost exactly a year ago now), and we're out for my family's annual skiing holiday. Unbeknownst to me something is about to happen that will change the course of my life forever.
 
-I wake up the morning of the 27th of December, planning to out on the mountain all day long, and check my messages and notifications. As I open GitHub, I notice the React scaffolding project received a bunch of issues over night. Interesting, that hasn't happened before! I go to the repo and can't believe what I see.
+I wake up the morning of the 27th of December, planning to be out on the mountain all day long, and check my messages and notifications. As I open GitHub, I notice the React scaffolding project received a bunch of issues over night. Interesting, that hasn't happened before! I go to the repo and can't believe what I see.
 
-**Overnight `react-boilerplate` went from 70 stars to 550 stars** and the number of stargazers was increasing every single time I refreshed the page.
+**Overnight `react-boilerplate` went from 70 stars to 550 stars** and the number of stargazers is increasing every single time I refresh the page.
 
 I have no idea what is happening. I frantically check Twitter in an effort to find out where all of these stars are coming from, but there's nothing there. I send out a tweet, asking if somebody knows what's going on. Thankfully `@___swastik` replies within a few minutes:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/mxstbr">@mxstbr</a> — HackerNews happened!</p>&mdash; Swastik (@___swastik) <a href="https://twitter.com/___swastik/status/681005846042509312">December 27, 2015</a></blockquote>
-<script defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 `react-boilerplate` is on the frontpage of HackerNews, and it's been there for ~12 hours.
 
@@ -48,17 +47,17 @@ I have no idea what is happening. I frantically check Twitter in an effort to fi
 	<figcaption>From <a href="https://web.archive.org/web/20151227081248/https://news.ycombinator.com/">web.archive.org</a></figcaption>
 </figure>
 
-I had heard of HackerNews, of course, and I had sometimes visited it, but I wasn't active on there by a long shot. Thusly I didn't realise just how massive the HackerNews community is. Literally overnight, `react-boilerplate` gained almost 500 stars, trended on GitHub and was shared all over the place. By the end of this wave, it had something like 2500 stars and a group of active contributors working on it.
+Of course I had heard of HackerNews and had visited it, but I wasn't active on there by a long shot. Thusly I hadn't realised just how massive the community is. Literally overnight, `react-boilerplate` gained almost 500 stars, trended on GitHub and was shared all over the place. By the end of this wave, it had something like 2500 stars and a team of active contributors working on it.
 
 > Side note: Seeing me repeatedly check and being excited about this thing called GitHub, my [dad](https://twitter.com/stoiber_manfred) actually got me a GitHub shirt and sticker for my birthday on the 4th of January. #bestdadever
 
 ## Thinkmill
 
-At the start of 2016, I met [Nik](https://twitter.com/nikgraf) for the first time and somehow convinced him to invite me to a skiing trip to Jackson Hole in Feburary. Together with some other [austrian](https://twitter.com/alexandertacho) [programmers]((https://twitter.com/moritzplassnig)) (and Sara) we had an amazing week jumping down some cliffs ("DO IT JESUS") and carving down some pistes.
+At the start of 2016, I met [Nik](https://twitter.com/nikgraf) for the first time and somehow convinced him to invite me to a skiing trip to Jackson Hole in Feburary. Together with some other [austrian](https://twitter.com/alexandertacho) [developers]((https://twitter.com/moritzplassnig)) (and Sara) we had an amazing week jumping down some cliffs ("DO IT JESUS") and carving down some pistes.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Made it to Jackson Hole and went skiing today! <a href="https://t.co/HsS0MolnHE">pic.twitter.com/HsS0MolnHE</a></p>&mdash; Max Stoiber (@mxstbr) <a href="https://twitter.com/mxstbr/status/697262986172301312">February 10, 2016</a></blockquote>
 
-Afterwards, we went to San Francisco, my first time there. Nik had been living there for a month, sponsored by Stripe, doing an Open Source Retreat working on Belle and DraftJS Plugins. My original plan was to find a job, but most of the companies I contacted didn't even want to interview me. So mostly, Nik and I met at Stripe HQ to hack on open source. One fateful day [Jed Watson](https://twitter.com/jedwatson), an australian Reacter who was in town for ReactConf, joined the hacking session.
+Afterwards, we went to San Francisco, my first time there. Nik had been living there for a month, sponsored by Stripe, doing an Open Source Retreat working on Belle and DraftJS Plugins. My original plan was to find a job, but most of the companies I had contacted didn't even want to interview me. So mostly, Nik and I met at Stripe HQ to hack on open source. One fateful day, [Jed Watson](https://twitter.com/jedwatson), an australian Reacter who had been in town for ReactConf, joined the hacking session.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/mxstbr">@mxstbr</a> <a href="https://twitter.com/nikgraf">@nikgraf</a> in the hotel! Where are you? Let&#39;s go :)</p>&mdash; Jed Watson (@JedWatson) <a href="https://twitter.com/JedWatson/status/701112787423010816">February 20, 2016</a></blockquote>
 
@@ -80,7 +79,7 @@ A highlight of this whole conference thing was being accepted to talk at ReactEu
 
 We wanted to build a webpack plugin which shows you all of your React (and eventually Angular 2, Ember,...) components in a separate, isolated space from your app. Developers could visually fuzz test their components, adding and saving variations of them. No more "Refresh, go to that page and click that button to see what the modal looks like now..."!
 
-We submitted a CFP explaining our cool idea, and agreed to start building it if the talk got accepted. (which we thought was unlikely) Of course, contrary to our expectations we got accepted. So now we had to actually build this thing.
+We submitted a CFP explaining our idea, and agreed to start building it if the talk got accepted. (which we thought was unlikely) Of course, contrary to our expectations, we got accepted. So now we had to actually build this thing.
 
 As it turns out, building a webpack plugin is not an easy thing to do; even less so when it's more complex than almost any existing one. We started working on what was going to become CarteBlanche three months before the conference, but didn't really get anywhere because it was so hard. I asked [Jan](https://twitter.com/jantimon), the maintainer of the HTMLWebpackPlugin, for some tips and that's when things really started taking off.
 
@@ -90,41 +89,41 @@ We spent two months before the conference frantically working 60+ hours per week
 
 *(that's 307 commits to one repo in less than a month)*
 
-CarteBlanche was a great idea and I'm incredibly proud how far we got the project in such a short amount of time, but it needs another month or two of development before it could be considered "production ready". There's just so many edge cases and configuration options it's hard to cover all of them.
+CarteBlanche was a great idea and I'm incredibly proud how far we got the project in such a short amount of time, but it needs another month or two of development before it can be considered "production ready". There are just so many edge cases and configuration options that it's hard to cover all of them.
 
-Now, it's been at lot more time than "a month or two" since ReactEurope, but from all of that stress and exhaustion back then I cannot stand looking at that codebase anymore, which is why I stopped working on it. I hope we pick it up again sometime in the future, as the idea was so cool, but as of right now we're both too busy with other things.
+Now, it's been at lot more time than "a month or two" since ReactEurope, but from all of that stress and exhaustion back then I cannot stand looking at that codebase anymore, which is why I stopped working on it. I hope we pick it up again sometime in the future, as the idea is amazing, but as of right now we're both too busy with other things.
 
 > Nik remarked after this whole ordeal: "If I ever found a startup again, I'll do it with you." I don't think either of us have ever been as productive as in those few weeks.
 
 ## `create-react-app`
 
-[Dan](https://twitter.com/dan_abramov) contacted me one day asking me if I had time to look at a new project [Christopher](https://twitter.com/vjeux) and he had been cooking up. He invited me to a private repo and showed me, what was back then an early prototype of, `create-react-app`.
+[Dan](https://twitter.com/dan_abramov) contacted me one day asking if I had time to look at a new project [Christopher](https://twitter.com/vjeux) and he had been cooking up. He invited me to a private repo which had an early prototype of `create-react-app`.
 
 The idea was immediately appealing. As the maintainer of a boilerplate, upgrading existing apps to a new version is basically impossible, and `create-react-app` solved that elegantly by hiding everything except runtime code, i.e. the actual app. It was already clear that this project would really help beginners get their feet wet with React, and that was very exciting.
 
 A funny side story, what is now `npm run eject` used to be called `npm run graduate` in the first iteration. I really didn't like the name, as it sounded like something you had to do – which _this operation_ totally isn't. You can build a perfect app without ever doing _that_.
 
-We needed a word to capture this, and thankfully we checked out [Ean Platter](https://twitter.com/eanplatter)s [`enclave`](https://github.com/eanplatter/enclave). It had similar ideas and also an operation like that, except he had found the perfect word for it: "eject".
+We needed a word to capture this, and thankfully we checked out [Ean Platter](https://twitter.com/eanplatter)s [`enclave`](https://github.com/eanplatter/enclave). It had similar ideas and an operation like that, and he had found the perfect word for it: "eject".
 
-I helped out on `create-react-app` shortly, had a few suggestions here and there but have since stopped due to being busy with my own projects. Dan has been doing an amazing job with it, and I can't wait to see where it goes next year!
+I helped out on `create-react-app` shortly, had a few suggestions here and there but have since stopped due to being busy with my own projects. Dan has been doing an amazing job with it, and I can't wait to see where it will go next year!
 
 ## `styled-components` 💅
 
-As the year progressed and I kept working on projects this question and discussion of styling React components came up over and over again. I was (and still am) a huge fan of CSS Modules for my applications, but for ElementalUI (a component library we build and use at Thinkmill) it just wasn't the right tool for the job.
+As the year progressed and I kept working on projects, this question and discussion of styling React components came up over and over again. I was (and still am) a huge fan of CSS Modules for my applications, but for ElementalUI (a component library we build and use at Thinkmill) it just wasn't the right tool for the job.
 
-The release of `create-react-app` certainly cemented this. Due to CSS Modules being a webpack-specific thing (or PostCSS), Dan decided not to integrate them to keep the bundler choice an implementation detail of `create-react-app`. (that's also why you cannot add custom configuration without ejecting)
+The release of `create-react-app` certainly cemented this. Due to CSS Modules being a webpack (or PostCSS) specific thing, Dan decided not to integrate them to keep the bundler choice an implementation detail of `create-react-app`. (that's also why you cannot add custom configuration without ejecting)
 
 I had been chatting with a bunch of people about this problem and tried a lot of different libraries. I met [Glen](https://twitter.com/glenmaddern) down in Sydney, and over a beer we started chatting about this whole CSS thing. He told me he had been working on something new, and showed me an early version of what would become `styled-components`.
 
-I thought it was the stupidest idea I had ever seen. Who would put actual CSS in their JavaScript and [what are those weird backticks](http://mxstbr.blog/2016/11/styled-components-magic-explained/)?!
+I thought it was the most stupid idea I had ever seen. Who would put actual CSS in their JavaScript and [what are those weird backticks](http://mxstbr.blog/2016/11/styled-components-magic-explained/)?!
 
-I still listened to his explanation of what he was doing and then tried it because why not. I built like three components and went "holy cow, this is rad". The API wasn't very good and had a huge surface area, but the core ideas were there and already it was amazing to work with. There and then we decided to make this a thing, and over a few weeks with many discussions fleshed out the API and DX.
+Still, I listened to his explanation of what he was doing and then tried it because why not. I built a few components and went "holy cow, this is rad". The API wasn't very good and had a huge surface area, but the core ideas were there and already, it was amazing to work with. There and then we decided to make this a thing, and over a few weeks with many discussions fleshed out the API and DX.
 
 ### One more thing
 
-I had submitted a CFP to ReactNL a few months prior to talk about my experiences with all the different styling libraries. The original plan was to showcase how some of the most popular libraries are okay certain downsides to enable other upsides, i.e. how tradeoffs affect their design and which ones you should choose based on the problems you have to solve.
+I had submitted a CFP to ReactNL a few months prior to talk about my experiences with all the different styling libraries. The original plan was to showcase how some of the most popular libraries are okay with certain downsides to enable other upsides, i.e. how tradeoffs affect their design and which ones you should choose based on the problems you have to solve.
 
-As it turns out, the timing could not have been any better. As ReactNL got closer, `styled-components` got more and more finished, so we decided to release there on stage. Due to some organizational matters the organizers moved me to be the opening keynote – the perfect opportunity to launch a new project!
+It turns out, the timing could not have been any better. As ReactNL got closer, `styled-components` got more and more finished, so we decided to release it on stage. The organizers moved me to be the opening keynote – the perfect opportunity to launch a new project!
 
 To top it off, Glen had the idea to do a Steve Jobs-style "One more thing..." reveal of the new library – [which I did](https://youtu.be/19gqsBc_Cx0?t=25m48s)!
 
@@ -172,3 +171,12 @@ I love looking at random statistics, so here are some numbers from this year:
 - GitHub contributions: 4,000
 - PRs opened: 450
 - Issues opened: 375
+
+<script>
+	window.addEventListener('load', function() {
+		var elem = document.createElement('script'); elem.type = 'text/javascript'; elem.defer = true;
+		elem.src = '//platform.twitter.com/widgets.js';
+		elem.charset = 'utf-8';
+		document.body.appendChild(elem);
+	}, false);
+</script>

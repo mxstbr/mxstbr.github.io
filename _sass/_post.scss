@@ -191,7 +191,7 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    transform: translateY(0) translateX(calc((100vw - #{$max-width + 2em} - 150%) / -4));
+    transform: translateY(0) translateX(calc((100vw - #{$max-width + 2em} - 200%) / -4));
     opacity: 1;
     padding: 0.5em 1em;
     background-color: white;
@@ -208,7 +208,7 @@
 }
 
 .share-on-twitter.hidden {
-    transform: translateY(2.5em) translateX(calc((100vw - #{$max-width + 2em} - 150%) / -4));
+    transform: translateY(2.5em) translateX(calc((100vw - #{$max-width + 2em} - 200%) / -4));
 }
 
 @media screen and (max-width: 950px) {
