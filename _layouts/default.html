@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	{% include head.html %}
-	<body itemscope itemtype="https://schema.org/Blog">
+	<body itemscope itemtype="https://schema.org/Blog" class="js-has-scrolled">
+		<script>/* Progressive enhancement */ document.body.classList.remove('js-has-scrolled')</script>
 		<nav class="nav" role="navigation">
 			<ul class="wrapper wrapper--nav">
 				<li class="nav__item nav__item--left"><a href="/newsletter">Newsletter</a></li>
