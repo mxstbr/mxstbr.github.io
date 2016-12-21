@@ -8,15 +8,15 @@ image: open-source-sentry.jpg
 custom_excerpt: "What happened in 2016? This is my story, full of open source, travel and tweets. How did react-boilerplate, styled-components and Carte Blanche come to be?"
 ---
 
-Originally this review was meant to solely be about 2016, but as it started coming along I noticed that the narrative didn't make any sense without any context. So, I'll start from the beginning – my time in London.
+Originally this review was meant to solely be about 2016, but as it started coming along I noticed that the narrative didn't make any sense without any context. So, I'll start from the beginning, my time in London, to explain how react-boilerplate, styled-components and more came to be.
 
 ## Animade
 
-My story starts at the beginning of 2015, a few months after I started to study computer science for the first time. Writing some HTML and CSS next to university I noticed my much bigger enthusiasm for the web than the course work. Thus, I decided to become an employable front-end developer, so I took a break from university and went to London for a three month internship at [Animade](http://animade.tv).
+My story starts at the beginning of 2015, a few months after I started to study computer science for the first time. Writing some HTML and CSS on the side while in university, I noticed that I was much more interested in the web than in my course work. Thus, I decided to become an employable front-end developer by taking a break from university and going to London for a three month internship at [Animade](http://animade.tv).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Packing for my internship in London <a href="https://twitter.com/animadetv">@animadetv</a>, having a hard time to decide what to take and what to leave...</p>&mdash; Max Stoiber (@mxstbr) <a href="https://twitter.com/mxstbr/status/556401046550245376">January 17, 2015</a></blockquote>
 
-After two months of learning from the awesome folks there I was quite proficient in HTML, CSS and jQuery. In an effort to keep me learning for the last month of my internship, [Simon](https://twitter.com/simonneveu) and [James](https://twitter.com/jameschambers) encouraged me to learn and trial this new, hot JavaScript framework called React.
+After two months of working with the awesome folks there I was quite proficient in HTML, CSS and jQuery. In an effort to keep me learning for the last month of my internship, [Simon](https://twitter.com/simonneveu) and [James](https://twitter.com/jameschambers) encouraged me to learn and trial this new, hot JavaScript framework called React.
 
 ## Learning React
 
@@ -28,32 +28,32 @@ Little did I know that this tiny, personal "open source project" (read: repo on 
 
 But I'm jumping ahead of myself here.
 
-As the second half of 2015 rolls around, I try (again) to study Computer Science at the local technical university, but my joy of programming is sadly not accompanied by a joy for converting numbers from the binary to the decimal system and back (much to the dismay of my parents). I'm still keeping up and writing good grades (acing the one actual programming course, an introduction to Java), but in reality I'm spending most of my time doing what I love – writing HTML, CSS and JS.
+As the second half of 2015 rolled around, I tried (again) to study Computer Science at the local technical university, but my joy of programming is sadly not accompanied by a joy for converting numbers from the binary to the decimal system and back (much to the dismay of my parents). I kept up and wrote good grades (acing the one actual programming course, an introduction to Java), but in reality I spent most of my time doing what I love – writing HTML, CSS and JS.
 
-It's Christmas (almost exactly a year ago now), and we're out for my family's annual skiing holiday. Unbeknownst to me something is about to happen that will change the course of my life forever.
+It's Christmas (almost exactly a year ago now), and we were out for my family's annual skiing holiday. Unbeknownst to me something was about to happen that would change the course of my life forever.
 
-I wake up the morning of the 27th of December, planning to be out on the mountain all day long, and check my messages and notifications. As I open GitHub, I notice the React scaffolding project received a bunch of issues over night. Interesting, that hasn't happened before! I go to the repo and can't believe what I see.
+I woke up the morning of the 27th of December, planning to be out on the mountain all day long, and checked my messages and notifications. As I opened GitHub, I noticed the React scaffolding project received a bunch of issues. Interesting, that hadn't happened before! I go to the repo and couldn't believe my eyes.
 
-**Overnight `react-boilerplate` went from 70 stars to 550 stars** and the number of stargazers is increasing every single time I refresh the page.
+**Overnight `react-boilerplate` went from 70 stars to 550 stars** and the number of stargazers was increasing every single time I refreshed the page.
 
-I have no idea what is happening. I frantically check Twitter in an effort to find out where all of these stars are coming from, but there's nothing there. I send out a tweet, asking if somebody knows what's going on. Thankfully `@___swastik` replies within a few minutes:
+I had no idea what was happening. I frantically checked Twitter in an effort to find out where all of these stars were coming from, but there was nothing there. I sent out a tweet, asking if somebody knew what was going on. Thankfully `@___swastik` replied within a few minutes:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/mxstbr">@mxstbr</a> — HackerNews happened!</p>&mdash; Swastik (@___swastik) <a href="https://twitter.com/___swastik/status/681005846042509312">December 27, 2015</a></blockquote>
 
-`react-boilerplate` is on the frontpage of HackerNews, and it's been there for ~12 hours.
+`react-boilerplate` was on the frontpage of HackerNews, and it had been there for ~12 hours.
 
 <figure>
 	<img alt="HackerNews Screenshot of the 7th of December, react-boilerplate has 128 upvotes and is on the frontpage" src="/img/react-boilerplate-hackernews.png" />
 	<figcaption>From <a href="https://web.archive.org/web/20151227081248/https://news.ycombinator.com/">web.archive.org</a></figcaption>
 </figure>
 
-Of course I had heard of HackerNews and had visited it, but I wasn't active on there by a long shot. Thusly I hadn't realised just how massive the community is. Literally overnight, `react-boilerplate` gained almost 500 stars, trended on GitHub and was shared all over the place. By the end of this wave, it had something like 2500 stars and a team of active contributors working on it.
+Of course I had heard of HackerNews and had visited it, but I wasn't active on there by a long shot. I hadn't realised just how massive the community is. Literally overnight, `react-boilerplate` gained almost 500 stars, trended on GitHub and was shared all over the place. By the end of this wave, it had something like 2500 stars and a team of active contributors working on it.
 
 > Side note: Seeing me repeatedly check and being excited about this thing called GitHub, my [dad](https://twitter.com/stoiber_manfred) actually got me a GitHub shirt and sticker for my birthday on the 4th of January. #bestdadever
 
 ## Thinkmill
 
-At the start of 2016, I met [Nik](https://twitter.com/nikgraf) for the first time and somehow convinced him to invite me to a skiing trip to Jackson Hole in Feburary. Together with some other [austrian](https://twitter.com/alexandertacho) [developers]((https://twitter.com/moritzplassnig)) (and Sara) we had an amazing week jumping down some cliffs ("DO IT JESUS") and carving down some pistes.
+At the start of 2016, I met [Nik](https://twitter.com/nikgraf) for the first time and somehow convinced him to invite me to a skiing trip to Jackson Hole in Feburary. Together with some other [austrian](https://twitter.com/alexandertacho) [developers](https://twitter.com/moritzplassnig) (and Sara) we had an amazing week jumping down some cliffs ("DO IT JESUS") and carving down some pistes.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Made it to Jackson Hole and went skiing today! <a href="https://t.co/HsS0MolnHE">pic.twitter.com/HsS0MolnHE</a></p>&mdash; Max Stoiber (@mxstbr) <a href="https://twitter.com/mxstbr/status/697262986172301312">February 10, 2016</a></blockquote>
 
