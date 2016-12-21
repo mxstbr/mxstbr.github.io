@@ -1,6 +1,6 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: "2016 in review: A dream come true"
 tags: 2016 review
 twitter_large: true
