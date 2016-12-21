@@ -71,14 +71,21 @@ figure {
   margin-bottom: 1.3em;
 }
 
+small,
 figcaption {
+    display: block;
   font-style: italic;
   color: $dark-grey;
   text-align: center;
 }
 
+small {
+    margin-top: -1em;
+}
+
 // Override the embedded tweet styling
 .twitter-tweet {
+  margin: 0 auto !important;
   margin-bottom: 1em !important;
   margin-top: 0 !important;
 }
