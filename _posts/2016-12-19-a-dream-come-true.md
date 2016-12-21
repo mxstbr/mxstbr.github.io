@@ -28,11 +28,11 @@ Little did I know that this tiny, personal "open source project" (read: repo on 
 
 But I'm jumping ahead of myself here.
 
-As the second half of 2015 rolled around, I tried (again) to study Computer Science at the local technical university, but my joy of programming is sadly not accompanied by a joy for converting numbers from the binary to the decimal system and back (much to the dismay of my parents). I kept up and wrote good grades (acing the one actual programming course, an introduction to Java), but in reality I spent most of my time doing what I love – writing HTML, CSS and JS.
+As the second half of 2015 rolled around, I tried (again) to study Computer Science at the local technical university, but my joy of programming was (and still is) sadly not accompanied by a joy for converting numbers from the binary to the decimal system and back (much to the dismay of my parents). I kept up and got good grades (acing the one actual programming course, an introduction to Java), but in reality I spent most of my time doing what I love – writing HTML, CSS and JS.
 
-It's Christmas (almost exactly a year ago now), and we were out for my family's annual skiing holiday. Unbeknownst to me something was about to happen that would change the course of my life forever.
+It was Christmas (almost exactly a year ago now), and we were out for my family's annual skiing holiday. Unbeknownst to me something was about to happen that would change the course of my life forever.
 
-I woke up the morning of the 27th of December, planning to be out on the mountain all day long, and checked my messages and notifications. As I opened GitHub, I noticed the React scaffolding project received a bunch of issues. Interesting, that hadn't happened before! I go to the repo and couldn't believe my eyes.
+I woke up the morning of the 27th of December, planning to be out on the mountain all day long, and checked my messages and notifications. As I opened GitHub, I noticed the React scaffolding project received a bunch of issues. Interesting, that hadn't happened before! I went to the repo and couldn’t believe my eyes.
 
 **Overnight `react-boilerplate` went from 70 stars to 550 stars** and the number of stargazers was increasing every single time I refreshed the page.
 
@@ -61,7 +61,7 @@ Afterwards, we went to San Francisco — my first time there. Nik had been livin
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/mxstbr">@mxstbr</a> <a href="https://twitter.com/nikgraf">@nikgraf</a> in the hotel! Where are you? Let&#39;s go :)</p>&mdash; Jed Watson (@JedWatson) <a href="https://twitter.com/JedWatson/status/701112787423010816">February 20, 2016</a></blockquote>
 
-So we three hung out and chatted, and I remarked how amazing it is what Nik is doing and that I'd love to work on open source full time. Jed looked at me in a weird way and asked me if I was serious. After some more chatting, he suggested I join his company, [Thinkmill](http://thinkmill.com.au), as their first full time open source employee.
+So we three coded and chatted, and I remarked how amazing it is what Nik is doing and that I'd love to work on open source full time. Jed looked at me in a weird way and asked me if I was serious. After some more chatting, he suggested I join his company, [Thinkmill](http://thinkmill.com.au), as their first full time open source employee.
 
 So I flew down to Sydney to meet the whole team and get a crash course in Keystone, the project I was going to maintain as my day job, to see if I liked it there. Boy, did I love it! Thinkmill is a great team consiting of lots of awesome folks with interesting ideas that are very involved in the local community, just amazing. Everybody in Australia is super friendly but the Thinkmillers (I just coined that term) definitely set a new standard.
 
@@ -71,7 +71,7 @@ So I flew down to Sydney to meet the whole team and get a crash course in Keysto
 
 Around the same time I spoke at ReactVienna for the first time, and started helping organizing it shortly afterwards. Seeing me speak, Nik talked me into applying to some conferences around Europe to share the things I had learned while making `react-boilerplate`. I wrote three different CFPs and started sending them out, not really expecting to be accepted anywhere.
 
-I could not have been more wrong. I was accepted and spoke at 15 different conferences, was flown all over Europe and even to the US once with my girlfriend, met a bunch of amazing people and spent weeks preparing, practicing and performing talks to share my knowledge.
+I could not have been more wrong. I was accepted and spoke at 15 different conferences, was flown all over Europe and even to the US once, met a bunch of amazing people and spent weeks preparing, practicing and performing talks to share my knowledge.
 
 ### Building CarteBlanche for ReactEurope
 
@@ -79,19 +79,19 @@ A highlight of this whole conference thing was being accepted to talk at ReactEu
 
 We wanted to build a webpack plugin which shows you all of your React (and eventually Angular 2, Ember,...) components in a separate, isolated space from your app. Developers could visually fuzz test their components, adding and saving variations of them. No more "Refresh, go to that page and click that button to see what the modal looks like now..."!
 
-We submitted a CFP explaining our idea, and agreed to start building it if the talk got accepted. (which we thought was unlikely) Of course, contrary to our expectations, we got accepted. So now we had to actually build this thing.
+We submitted a CFP explaining our idea, and agreed to start building it if the talk got accepted — which we thought was unlikely. Of course, contrary to our expectations, we got accepted. So now we had to actually build this thing.
 
 As it turns out, building a webpack plugin is not an easy thing to do; even less so when it's more complex than almost any existing one. We started working on what was going to become CarteBlanche three months before the conference, but didn't really get anywhere because it was so hard. I asked [Jan](https://twitter.com/jantimon), the maintainer of the HTMLWebpackPlugin, for some tips and that's when things really started taking off.
 
-We spent two months before the conference frantically working 60+ hours per week trying to get this done and ready for launch. With a lot of help by Jan we got it to a presentable state shortly before the trip. We went to Paris, and basically the sole thing I remember from the conference is sitting in the back, hacking away to get last minute polish in. (and some karaoke)
+We spent two months before the conference frantically working 60+ hours per week trying to get this done and ready for launch. With a lot of help by Jan we got it to a presentable state shortly before the trip. We went to Paris, and pretty much the only thing I remember from the conference is sitting in the back and hacking away to get that last minute polish in — and some karaoke.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">One more interesting stat from the Carte Blanche launch…<br><br>(taken on my Github profile) <a href="https://t.co/mBannTZwyP">pic.twitter.com/mBannTZwyP</a></p>&mdash; Max Stoiber (@mxstbr) <a href="https://twitter.com/mxstbr/status/741231688076931072">June 10, 2016</a></blockquote>
 
 *(that's 307 commits to one repo in less than a month)*
 
-CarteBlanche was a great idea and I'm incredibly proud how far we got the project in such a short amount of time, but it needs another month or two of development before it can be considered "production ready". There are just so many edge cases and configuration options that it's hard to cover all of them.
+CarteBlanche was a great idea and I’m incredibly proud how far we developed the project in such a short amount of time, but it needed another month or two of development before it could be considered “production ready”. There were just so many edge cases and configuration options that it was hard to cover all of them.
 
-Now, it's been at lot more time than "a month or two" since ReactEurope, but from all of that stress and exhaustion back then I cannot stand looking at that codebase anymore, which is why I stopped working on it. I hope we pick it up again sometime in the future, as the idea is amazing, but as of right now we're both too busy with other things.
+Now, it’s been a lot longer than “a month or two” since ReactEurope, but from all of that stress and exhaustion back then I cannot stand looking at that codebase anymore, which is why I stopped working on it. I hope we pick it up again sometime in the future, as the idea is amazing. However currently we’re both too busy with other things.
 
 > Nik remarked after this whole ordeal: "If I ever found a startup again, I'll do it with you." I don't think either of us have ever been as productive as in those few weeks.
 
@@ -101,15 +101,13 @@ Now, it's been at lot more time than "a month or two" since ReactEurope, but fro
 
 The idea was immediately appealing. As the maintainer of a boilerplate, upgrading existing apps to a new version is basically impossible, and `create-react-app` solved that elegantly by hiding everything except runtime code, i.e. the actual app. It was already clear that this project would really help beginners get their feet wet with React, and that was very exciting.
 
-A funny side story, what is now `npm run eject` used to be called `npm run graduate` in the first iteration. I really didn't like the name, as it sounded like something you had to do – which _this operation_ totally isn't. You can build a perfect app without ever doing _that_.
-
-We needed a word to capture this, and thankfully we checked out [Ean Platter](https://twitter.com/eanplatter)s [`enclave`](https://github.com/eanplatter/enclave). It had similar ideas and an operation like that, and he had found the perfect word for it: "eject".
+> Funny side story: what is now `npm run eject` used to be called `npm run graduate` in the first iteration. I really didn't like the name, as it sounded like something you had to do – which _this operation_ totally isn't.  We needed a word to capture this, and thankfully we checked out [Ean Platter](https://twitter.com/eanplatter)s [`enclave`](https://github.com/eanplatter/enclave). It had similar ideas and an operation like that, and he had found the perfect word for it: "eject".
 
 I helped out on `create-react-app` shortly, had a few suggestions here and there but have since stopped due to being busy with my own projects. Dan has been doing an amazing job with it, and I can't wait to see where it will go next year!
 
 ## `styled-components` 💅
 
-As the year progressed and I kept working on projects, this question and discussion of styling React components came up over and over again. I was (and still am) a huge fan of CSS Modules for my applications, but for ElementalUI (a component library we build and use at Thinkmill) it just wasn't the right tool for the job.
+As the year progressed and I kept working on projects, this question and discussion of styling React components came up over and over again. I was (and still am) a huge fan of CSS Modules for my applications but for ElementalUI, Thinkmill’s component library, it just wasn’t the right tool for the job.
 
 The release of `create-react-app` certainly cemented this. Due to CSS Modules being a webpack (or PostCSS) specific thing, Dan decided not to integrate them to keep the bundler choice an implementation detail of `create-react-app`. (that's also why you cannot add custom configuration without ejecting)
 
