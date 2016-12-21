@@ -9,6 +9,14 @@
     #{$property}: #{$value}rem;
 }
 
+
+@mixin fontless {
+  html:not(.wf-active) & {
+    font-family: $fallback-sans-serif;
+    @content;
+  }
+}
+
 @function pct( $size, $context ) {
   @return percentage( $size / $context ); }
 

@@ -9,11 +9,18 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-family: $sans-serif;
+  font-family: $fallback-sans-serif;
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
   font-weight: 700;
+}
+
+.wf-sourcesanspro-n7-active h1,
+.wf-sourcesanspro-n7-active h2,
+.wf-sourcesanspro-n7-active h3,
+.wf-sourcesanspro-n7-active h4 {
+  font-family: $sans-serif;
 }
 
 h1 {

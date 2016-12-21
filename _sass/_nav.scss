@@ -28,7 +28,7 @@
 }
 
 .nav__logo {
-	font-family: Georgia, serif;
+	font-family: Georgia, serif !important;
 	font-weight: 400;
 	font-size: 1.5em;
 	text-align: center;
@@ -52,6 +52,12 @@
 	transform: translateY(1.75em);
 	margin-left: -0.65em;
 	will-change: transform, opacity;
+
+	@include fontless {
+		font-size: 17px;
+		line-height: 22px;
+		letter-spacing: -0.15px;
+	}
 }
 
 .nav__item {

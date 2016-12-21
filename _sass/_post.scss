@@ -40,11 +40,15 @@
 
     &__date {
         color: $dark-grey;
-        font-family: $sans-serif;
+        font-family: $fallback-sans-serif;
         font-weight: 400;
         text-align: center;
         margin-top: 0.5em;
         font-size: 1em;
+    }
+
+    .wf-sourcesanspro-n4-active &__date {
+        font-family: $sans-serif;
     }
 
     &__title {
@@ -52,6 +56,13 @@
         color: $text-color;
         padding: 0;
         text-align: center;
+
+        @include fontless {
+            font-size: 35px;
+            line-height: 46px;
+            letter-spacing: -0.35px;
+            word-spacing: -0.3px;
+        }
 
         & + hr {
             margin: 0;
