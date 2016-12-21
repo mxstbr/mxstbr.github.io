@@ -87,7 +87,7 @@ We spent two months before the conference frantically working 60+ hours per week
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">One more interesting stat from the Carte Blanche launch…<br><br>(taken on my Github profile) <a href="https://t.co/mBannTZwyP">pic.twitter.com/mBannTZwyP</a></p>&mdash; Max Stoiber (@mxstbr) <a href="https://twitter.com/mxstbr/status/741231688076931072">June 10, 2016</a></blockquote>
 
-*(that's 307 commits to one repo in less than a month)*
+<small class="caption">(that's 307 commits to one repo in less than a month)</small>
 
 CarteBlanche was a great idea and I’m incredibly proud how far we developed the project in such a short amount of time, but it needed another month or two of development before it could be considered “production ready”. There were just so many edge cases and configuration options that it was hard to cover all of them.
 
@@ -169,6 +169,8 @@ I love looking at random statistics, so here are some numbers from this year:
 - GitHub contributions: 4,000
 - PRs opened: 450
 - Issues opened: 375
+
+<small class="footnote">Thanks to [Karl Horky](https://twitter.com/karlhorky), [Nik Graf](https://twitter.com/nikgraf) and [Kitze](https://twitter.com/thekitze).</small>
 
 <script>
 	window.addEventListener('load', function() {
