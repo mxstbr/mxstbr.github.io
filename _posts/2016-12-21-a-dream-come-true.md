@@ -53,7 +53,7 @@ Of course I had heard of HackerNews and had visited it, but I wasn't active on t
 
 ## Thinkmill
 
-At the start of 2016, I met [Nik](https://twitter.com/nikgraf){:target="_blank"} for the first time and somehow convinced him to invite me to a skiing trip to Jackson Hole in Feburary. Together with some other [austrian](https://twitter.com/alexandertacho){:target="_blank"} [developers](https://twitter.com/moritzplassnig){:target="_blank"} (and Sara) we had an amazing week jumping down some cliffs ("DO IT JESUS") and carving down some pistes.
+At the start of 2016, I met [Nik](https://twitter.com/nikgraf){:target="_blank"} for the first time and somehow convinced him to invite me to a skiing trip to Jackson Hole in Feburary. Together with some other [austrian](https://twitter.com/alexandertacho){:target="_blank"} [developers](https://twitter.com/moritzplassnig){:target="_blank"} (and [Sara](https://twitter.com/GartnSara){:target="_blank"}) we had an amazing week jumping down some cliffs ("DO IT JESUS") and carving down some pistes.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Made it to Jackson Hole and went skiing today! <a href="https://t.co/HsS0MolnHE">pic.twitter.com/HsS0MolnHE</a></p>&mdash; Max Stoiber (@mxstbr) <a href="https://twitter.com/mxstbr/status/697262986172301312">February 10, 2016</a></blockquote>
 
