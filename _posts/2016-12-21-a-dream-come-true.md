@@ -170,7 +170,7 @@ I love looking at random statistics, so here are some numbers from this year:
 - PRs opened: 450
 - Issues opened: 375
 
-<small class="footnote">Thanks to [Karl Horky](https://twitter.com/karlhorky){:target="_blank"}, [Nik Graf](https://twitter.com/nikgraf){:target="_blank"} and [Kitze](https://twitter.com/thekitze){:target="_blank"}.</small>
+<small class="footnote">Thanks to [Sebastian McKenzie](https://medium.com/@sebmck/2015-in-review-51ac7035e272#.om2h2rnae){:target="_blank"}, [Karl Horky](https://twitter.com/karlhorky){:target="_blank"}, [Nik Graf](https://twitter.com/nikgraf){:target="_blank"} and [Kitze](https://twitter.com/thekitze){:target="_blank"}.</small>
 
 <script>
 	window.addEventListener('load', function() {
