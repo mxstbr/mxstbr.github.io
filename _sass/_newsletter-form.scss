@@ -74,13 +74,10 @@
 	white-space: nowrap;
 	width: auto;
 	display: block;
-	font-family: $fallback-sans-serif;
 	transition: background-color 150ms ease-out;
 	letter-spacing: 0.02em;
-}
 
-.wf-sourcesanspro-n4-active #mc_embed_signup .button {
-	font-family: $sans-serif;
+	@include sans;
 }
 
 #mc_embed_signup .button:hover {
