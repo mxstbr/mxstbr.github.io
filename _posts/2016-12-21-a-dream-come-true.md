@@ -148,7 +148,7 @@ For 2017 I want to do more of the things that make me happy:
 - Collaborate with rad people on interesting ideas and libraries
 - Explore new areas and expand my horizon beyond React and JavaScript (P2P, ReasonML,...)
 - Write more articles (goal: 50 posts in 2017)
-- Consistenly [send out newsletters](/newsletter/) and establish them as my place to share more personal, long-form thoughts (goal: one newsletter every week)
+- Consistently [send out newsletters](/newsletter/) and establish them as my place to share more personal, long-form thoughts (goal: one newsletter every week)
 - Go skiing more often
 
 I also want to travel a bit less, as this year was quite exhausting. I'll still be speaking at a few conferences, but I'm looking forward to being home for longer than a week and spending quality time with my girlfriend.
