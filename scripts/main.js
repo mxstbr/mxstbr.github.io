@@ -1,6 +1,14 @@
 var post = document.querySelector('article[role="article"]');
 var tweetButton = document.querySelector('.share-on-twitter')
 
+window.onhashchange = function() {
+  console.log('ON HASH CHANGE')
+}
+
+window.addEventListener('popstate', function (e) {
+    console.log('ON POP')
+});
+
 if (post && tweetButton) {
   var postSmallerThanWindow = post.clientHeight < window.innerHeight;
 	if (postSmallerThanWindow) {
