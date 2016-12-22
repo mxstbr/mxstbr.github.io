@@ -63,7 +63,7 @@ Afterwards, we went to San Francisco — my first time there. Nik had been livin
 
 So we three coded and chatted, and I remarked how amazing it is what Nik is doing and that I'd love to work on open source full time. Jed looked at me in a weird way and asked me if I was serious. After some more chatting, he suggested I join his company, [Thinkmill](http://thinkmill.com.au){:target="_blank"}, as their first full time open source employee.
 
-So I flew down to Sydney to meet the whole team and get a crash course in Keystone, the project I was going to maintain as my day job, to see if I liked it there. Boy, did I love it! Thinkmill is a great team consiting of lots of awesome folks with interesting ideas that are very involved in the local community, just amazing. Everybody in Australia is super friendly but the Thinkmillers (I just coined that term) definitely set a new standard.
+So I flew down to Sydney to meet the whole team and get a crash course in Keystone, the project I was going to maintain as my day job, to see if I liked it there. Boy, did I love it! Thinkmill is a great team consisting of lots of awesome folks with interesting ideas that are very involved in the local community, just amazing. Everybody in Australia is super friendly but the Thinkmillers (I just coined that term) definitely set a new standard.
 
 > I've been working there ever since, though recently I've not been spending as much time making Keystone and more time making `styled-components` and other new projects.
 
