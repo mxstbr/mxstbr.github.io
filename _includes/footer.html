@@ -19,7 +19,7 @@ owa_cmds.push(['trackClicks']);
 
 var injected = false
 
-function() addOWA{
+function addOWA() {
 	if (!injected) {
 		var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.defer = true;
 		owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
