@@ -7,7 +7,10 @@ layout: default
   {% for post in paginator.posts %}
     {% if post.hidden != true %}
   		<a class="post-home__wrapper" href="{{ site.baseurl }}{{ post.url }}">
-        <article class="card post-home">
+        <article class="card post-home{% if post.image %} card--with-image {% endif %}">
+            {% if post.image %}
+              <img class="card__image" src="{{ site.url }}/img/{{ post.image }}" />
+            {% endif %}
   					<h3 class="post-home__date" itemprop="datePublished">
 							{% include date.html date=post.date %}
   					</h3>

@@ -10,4 +10,12 @@
 	&:hover {
 		box-shadow: 0 2px 4px rgba(50,59,67,0.1);
 	}
+
+	&__image {
+		margin-left: -1em;
+    margin-top: -1.5em;
+    margin-bottom: 1em;
+    max-width: calc(100% + 2em);
+    border-radius: 1px 1px 0 0;
+	}
 }
