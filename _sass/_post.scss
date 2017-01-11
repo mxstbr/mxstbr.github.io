@@ -38,15 +38,20 @@
 			margin-bottom: 1.3em;
 		}
 
-    &__date {
-        color: $dark-grey;
-        font-weight: 400;
+    &__subtitle {
         text-align: center;
         margin-top: 0.5em;
-        font-size: 1em;
-
-        @include sans;
     }
+
+		&__date,
+		&__views {
+			color: $dark-grey;
+			font-weight: 400;
+			font-size: 1em;
+			@include sans;
+			margin: 0;
+			display: inline-block;
+		}
 
     &__title {
         margin: 0.3em 0;

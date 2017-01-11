@@ -6,7 +6,10 @@ layout: default
 	<header class="post__header">
 		<h1 class="post__title" itemprop="headline">{{ page.title | xml_escape }}</h1>
 		<hr />
-		<h2 class="post__date" itemprop="datePublished">{% include date.html date=page.date %}</h2>
+		<div class="post__subtitle">
+			<h2 class="post__date" itemprop="datePublished">{% include date.html date=page.date %}</h2>
+			<h2 class="post__views" id="post__views"></h2>
+		</div>
 	</header>
 
 	{{ content }}
@@ -32,5 +35,20 @@ layout: default
 	</div>
 
 	<a href="https://twitter.com/intent/tweet?original_referer={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;text={{ page.title | uri_escape }}&amp;tw_p=tweetbutton&amp;url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;via=mxstbr" rel="nofollow" target="_blank" class="share-on-twitter hidden" onclick="OWATracker.trackAction('post', 'click', 'tweet-this');">Tweet this article</a>
+
+	<script type="text/javascript">
+		// Construct url
+		var url = '//views.mxstbr.blog' + location.pathname.replace(/^(\/\d{4})\/(\d{2})\/(.+)/gi, '$1-$2-$3').replace(/\/$/, '')
+		var request = new XMLHttpRequest();
+		request.onreadystatechange = function() {
+			if (request.readyState == 4 && request.status == 200) {
+				var response = JSON.parse(request.responseText)
+				var elem = document.getElementById('post__views')
+				elem.innerText = ', Views: ' + response.views
+			}
+		}
+		request.open("GET", url, true); // true for asynchronous
+		request.send(null);
+	</script>
 
 </article>
