@@ -1,6 +1,6 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: "Build your first Node.js microservice"
 tags: node micro zeit
 twitter_large: true
