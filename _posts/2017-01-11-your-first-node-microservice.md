@@ -144,7 +144,7 @@ To create our database we require `level` and tell it where to save the database
 const { send } = require('micro')
 const url = require('url')
 const level = require('level')
-const promisifiy = require('then-levelup')
+const promisify = require('then-levelup')
 
 const db = promisify(level('visits.db', {
   valueEncoding: 'json'
