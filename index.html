@@ -22,9 +22,11 @@ layout: default
   							{{ post.excerpt | strip_html | strip_newlines | truncatewords: post.excerpt_words }}
   						{% endif %}
   					</p>
-            <!-- {% for tag in post.tags %}
-              <h3 class="post-home__category">#{{ tag | downcase }}</h3>
-            {% endfor %} -->
+						{% comment %}
+	            {% for tag in post.tags %}
+	              <h3 class="post-home__tag">#{{ tag | downcase }}</h3>
+	            {% endfor %}
+						{% endcomment %}
         </article>
   		</a>
     {% endif %}
