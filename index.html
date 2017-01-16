@@ -6,7 +6,7 @@ layout: default
   <h2 style="display: none;">Posts</h2>
   {% for post in paginator.posts %}
     {% if post.hidden != true %}
-  		<a class="post-home__wrapper" href="{{ site.baseurl }}{{ post.url }}">
+  		<a class="post-home__wrapper" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.baseurl }}{{ post.url }}{% endif %}" target="{% if post.external_url %}_blank{% endif %}">
         <article class="card post-home{% if post.image %} card--with-image {% endif %}">
             {% if post.image %}
               <img class="card__image" src="{{ site.url }}/img/{{ post.image }}" />
@@ -14,6 +14,9 @@ layout: default
   					<h3 class="post-home__date" itemprop="datePublished">
 							{% include date.html date=post.date %}
   					</h3>
+						{% if post.external_site %}
+							<p class="post-home__attribution">{{ post.external_site }}</p>
+						{% endif %}
             <h2 class="post-home__title" itemprop="headline">{{ post.title | xml_escape }}</h2>
             <p class="post-home__excerpt">
   						{% if post.custom_excerpt %}

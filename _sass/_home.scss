@@ -27,12 +27,20 @@
 				@include rem(font-size, 1.1);
     }
 
-		&__date {
+		&__date,
+		&__attribution {
 			@include rem(font-size, 0.9);
 			color: $light-text-color;
 			font-weight: 400;
 			margin: 0;
 			margin-bottom: 0.5em;
+			display: inline-block;
+			@include sans;
+		}
+
+		&__attribution:before {
+			content: '\b7';
+			margin-right: 0.3em; // Magic number that makes it look visually aligned
 		}
 
 		&__excerpt {
