@@ -11,7 +11,7 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- Posts -->{% for post in site.posts %}{% if post.hidden != true %}
+    <!-- Posts -->{% for post in site.posts %}{% if post.hidden != true and post.external_url == nil %}
     <url>
         <loc>{{ site.url }}{{ post.url }}</loc>
         <lastmod>{% if post.updated == null %}{{ post.date | date_to_xmlschema }}{% else %}{{ post.updated | date_to_xmlschema }}{% endif %}</lastmod>
