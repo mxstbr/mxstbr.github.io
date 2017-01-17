@@ -22,11 +22,11 @@ layout: default
 
 	<div class="post__related">
 		{% if page.previous %}
-			<a href="{{ page.previous.url }}" class="post__related-previous" onclick="OWATracker.trackAction('post', 'click', 'previous');" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+			<a href="{% if page.previous.external_url %}{{ page.previous.external_url }}{% else %}{{ page.previous.url }}{% endif %}" target="{% if page.previous.external_url %}_blank{% endif %}" class="post__related-previous" onclick="OWATracker.trackAction('post', 'click', 'previous');" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
 		{% endif %}
 		{% if page.next %}
 			{% if page.next.hidden != true %}
-				<a href="{{ page.next.url }}" class="post__related-next" onclick="OWATracker.trackAction('post', 'click', 'next');" title="{{ page.next.title }}">{{ page.next.title }}</a>
+				<a href="{% if page.next.external_url %}{{ page.next.external_url }}{% else %}{{ page.next.url }}{% endif %}" target="{% if page.next.external_url %}_blank{% endif %}" class="post__related-next" onclick="OWATracker.trackAction('post', 'click', 'next');" title="{{ page.next.title }}">{{ page.next.title }}</a>
 			{% endif %}
 		{% endif %}
 	</div>
