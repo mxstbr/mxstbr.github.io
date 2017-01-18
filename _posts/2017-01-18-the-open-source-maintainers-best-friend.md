@@ -1,6 +1,6 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: "DangerJS: The open source maintainers best friend"
 tags: oss javascript
 twitter_large: true
