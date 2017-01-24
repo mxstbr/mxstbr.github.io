@@ -22,7 +22,7 @@ That's unsustainable. With all the activity, it's borderline impossible for any 
 
 For the longest time I've thought boilerplates, which need to be opinionated to be useful, have to have a BDFL. (Benevolent Dictator For Life) I told myself that moving to an organisation would decrement its value and lead to its eventual demise. The reality is entirely different, and I'm grateful to [Sebastien](https://twitter.com/semdubois), [Oliver](https://twitter.com/oliverturner) and many others for continuously pointing that out to me.
 
-By moving to an organisation the community officially owns the project, so the team can make critical calls with or without me. This will speed up development, tighten the release cycle and means the decisions we make will be much better. I'm now Just Another Maintainer™️ of the project instead of the BDFL. (it also means I can focus on other things sometimes without feeling bad)
+By moving to an organisation the community officially owns the project, so the team can make critical calls with or without me. This will speed up development, tighten the release cycle and means the decisions we make will be much better. I'm now Just Another Maintainer™️ of the project instead of the BDFL.
 
 I'm super excited about the future of `react-boilerplate`. Huge props to the amazing team:
 
