@@ -14,7 +14,7 @@ It's time to make that official by moving it to its own organisation on GitHub. 
 
 ## Organisations are awesome
 
-This might seem like a small difference but is actually a big deal. I have been the bottleneck in `react-boilerplate`'s development for too long. With all the activity we get, the team has done an amazing job of managing incoming issues and pull requests, adding features and fixing bugs, but they've always had to wait for me to make the last calls.
+This might seem like a small difference but is actually a big deal. I have been the bottleneck in `react-boilerplate`'s development for too long. The team has done an amazing job of managing incoming issues and pull requests, adding features and fixing bugs, but they've always had to wait for me to make the last calls.
 
 That's unsustainable. With all the activity, it's borderline impossible for any single person to keep up.
 
