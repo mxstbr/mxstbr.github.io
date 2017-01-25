@@ -1,6 +1,6 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: "The future of react-boilerplate"
 tags: react-boilerplate oss react
 twitter_large: true
