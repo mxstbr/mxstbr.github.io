@@ -142,9 +142,9 @@ Don't worry if this is over your head. All I want is that you're not surprised w
 
 ## Manipulating children
 
-If you take a look at the React docs you will see it says that "children are an _opaque data structure_". What they are essentially telling us that `props.children` might be an array or or maybe a function or maybe an object or maybe… Since you can pass anything, you can never know for sure.
+If you take a look at the React docs you will see it says that "children are an _opaque data structure_". What they are essentially telling us is that `props.children` can be any type, such as an array, a function, an object, etc. Since you can pass anything, you can never know for sure.
 
-React provides a bunch of helper functions to make manipulating children easy and without trouble. These are available at `React.Children`.
+React provides a bunch of helper functions to make manipulating children easy and painless. These are available at `React.Children`.
 
 ### Looping over children
 
@@ -197,7 +197,7 @@ With the `React.Children.map` function though, this is no problem whatsoever:
 
 ### Counting the children
 
-Since `this.props.children` might be anything from an array over a string to a function, checking how _many_ children we got turns out to be rather hard! Naïvely doing `this.props.children.length` would break when passed a String or a function. We'd have one child, `"Hello World!"`, but the `.length` would be reported as `12` instead!
+Since `this.props.children` can be any type, checking how _many_ children a component has turns out to be rather hard! Naïvely doing `this.props.children.length` would break when passed a String or a function. We'd have one child, `"Hello World!"`, but the `.length` would be reported as `12` instead!
 
 That's why we have `React.Children.count`:
 
@@ -285,7 +285,7 @@ class Sort extends React.Component {
 </Sort>
 ```
 
-The above example would render "apples bananas oranges".
+The above example renders the strings, but sorted:
 
 <figure>
   <a target="_blank" href="http://www.webpackbin.com/NyE2TQhwz">
@@ -295,3 +295,5 @@ The above example would render "apples bananas oranges".
 </figure>
 
 ## Editing children
+
+<small class="footnote">Thanks to [Karl Horky](https://twitter.com/karlhorky){:target="_blank"}.</small>
