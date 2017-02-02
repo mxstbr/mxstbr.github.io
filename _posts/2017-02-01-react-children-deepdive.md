@@ -6,7 +6,7 @@ title: "A deep dive into children in React"
 
 TK introduction
 
-Let's say we have a `<Grid />` component which can contain as many instances of the `<Row />` component as we want. For example to render three rows one would do:
+Let's say we have a `<Grid />` component which can contain `<Row />` components. You'd use it like so:
 
 ```html
 <Grid>
@@ -293,3 +293,5 @@ The above example would render "apples bananas oranges".
     <figcaption><a target="_blank" href="http://www.webpackbin.com/NyE2TQhwz">(Live demo)</a></figcaption>
   </a>
 </figure>
+
+## Editing children
