@@ -6,9 +6,9 @@ title: "A deep dive into children in React"
 
 The core of React is components. You can nest these components like you would nest HTML tags, which makes is easy to write JSX since it resembles markup.
 
-When I first started learning React, I thought "Put `this.props.children` everywhere, and that's all there is to know about children". Boy, was I wrong.
+When I first learned React, I thought "Use `props.children` and that's it. I know everything about children" Boy, was I wrong.
 
-Because we're working with JavaScript, we can manipulate child components. We can send special properties to them, decide if we want them to render or not and generally manipulate them to our will. Let's dig into the magic that is children in React.
+Because we're working with JavaScript, we can change children. We can send special properties to them, decide if we want them to render or not and generally manipulate them to our will. Let's dig into the power of children in React.
 
 ## Table of contents
 
@@ -20,6 +20,10 @@ Because we're working with JavaScript, we can manipulate child components. We ca
   - [Counting children](#counting-children)
   - [Converting children to an array](#converting-children-to-an-array)
   - [Enforcing a single child](#enforcing-a-single-child)
+- [Editing children](#editing-children)
+  - [Changing children props](#changing-children-props)
+  - [Immutably cloning elements](#immutably-cloning-elements)
+- [Summary](#summary)
 
 ## Child components
 
@@ -313,4 +317,129 @@ This returns the only child in `this.props.children`. If there is more than one 
 
 ## Editing children
 
-<small class="footnote">Thanks to [Karl Horky](https://twitter.com/karlhorky){:target="_blank"}.</small>
+We can render arbitrary components as children, but still control them from the parent instead of the component we render them from. To illustrate this, let's say we have a `RadioGroup` component which can contain a number of `RadioButton` components. (which render an `<input type="radio">` inside a `<label>`)
+
+The `RadioButton`s are not rendered from the `RadioGroup` itself, they are used as children. This means somewhere in our application we have this code:
+
+```javascript
+render() {
+  return(
+    <RadioGroup>
+      <RadioButton value="first">First</RadioButton>
+      <RadioButton value="second">Second</RadioButton>
+      <RadioButton value="third">Third</RadioButton>
+    </RadioGroup>
+  )
+}
+```
+
+There is an issue with this code though. The `input`s aren't grouped, which leads to this:
+
+<figure>
+  <a target="_blank" href="http://www.webpackbin.com/Vk-Vt_VawM">
+    <img alt="Three radio buttons, all selected" src="/img/react-children-radio-bug.png" />
+    <figcaption><a target="_blank" href="http://www.webpackbin.com/Vk-Vt_VawM">(Live demo)</a></figcaption>
+  </a>
+</figure>
+
+To group `input` tags together they all need to have the same `name` attribute. We could of course go through and assign a `name` property to every single `RadioButton`:
+
+```html
+<RadioGroup>
+  <RadioButton name="g1" value="first">First</RadioButton>
+  <RadioButton name="g1" value="second">Second</RadioButton>
+  <RadioButton name="g1" value="third">Third</RadioButton>
+</RadioGroup>
+```
+
+But that's a) tedious and b) error prone. We have all the power of JavaScript at our fingertips! Can we use that to tell our `RadioGroup` the `name` we want all its children to get and have it take care of that automatically?
+
+### Changing children props
+
+In our `RadioGroup` we'll add a new bound method called `renderChildren` where we'll edit the childrens props:
+
+```javascript
+class RadioGroup extends React.Component {
+  constructor() {
+    super()
+    // Bind the method to the component context
+    this.renderChildren = this.renderChildren.bind(this)
+  }
+
+  renderChildren() {
+    // TODO: Change the name prop of all children
+    // to this.props.name
+    return this.props.children
+  }
+
+  render() {
+    return (
+      <div className="group">
+        {this.renderChildren()}
+      </div>
+    )
+  }
+}
+```
+
+Let's start by mapping over the children to get each individual child:
+
+```javascript
+renderChildren() {
+  return React.Children.map(this.props.children, child => {
+    // TODO: Change the name prop to this.props.name
+    return child
+  })
+}
+```
+
+How can we edit their properties though?
+
+### Immutably cloning elements
+
+This is where the last helper method of today comes into play. As the name suggests, `React.cloneElement` clones an element. We pass it the element we want to clone as the first argument, and then as a second argument we can pass an object of props we want to be set on the cloned element:
+
+```javascript
+const cloned = React.cloneElement(element, {
+  new: 'yes!'
+})
+```
+
+The `cloned` element will now have the `new` prop set to `"yes!"`.
+
+This is exactly what we need to finish our `RadioGroup`. We clone each child and set the `name` prop of the cloned child to `this.props.name`:
+
+```javascript
+renderChildren() {
+  return React.Children.map(this.props.children, child => {
+    return React.cloneElement(child, {
+      name: this.props.name
+    })
+  })
+}
+```
+
+The last step is to pass a unique `name` to our `RadioGroup`:
+
+```html
+<RadioGroup name="g1">
+  <RadioButton value="first">First</RadioButton>
+  <RadioButton value="second">Second</RadioButton>
+  <RadioButton value="third">Third</RadioButton>
+</RadioGroup>
+```
+
+<figure>
+  <a target="_blank" href="http://www.webpackbin.com/41gz34aDM">
+    <img alt="Three radio buttons, one of them selected" src="/img/react-children-radio-done.png" />
+    <figcaption><a target="_blank" href="http://www.webpackbin.com/41gz34aDM">(Live demo)</a></figcaption>
+  </a>
+</figure>
+
+It works! 🎉 Instead of manually having to set the `name` attribute on every `RadioButton`, we just tell our `RadioGroup` what we want to the name to be and it takes care of that.
+
+## Summary
+
+Children make React components feel like markup instead of disjoint entities. Using the power of JavaScript and some React helper functions we can work with them to create declarative APIs and make our lives easier.
+
+<small class="footnote">Thanks to [Karl Horky](https://twitter.com/karlhorky){:target="_blank"} and [Jake Trent](http://jaketrent.com/post/send-props-to-children-react/){:target="_blank"}.</small>
