@@ -1,7 +1,11 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: "A deep dive into children in React"
+tags: react deepdive
+twitter_large: true
+image: family.jpg
+custom_excerpt: "We can manipulate children in React using the power of JavaScript. Let's explore children in-depth and see how they can make our lives easier!"
 ---
 
 The core of React is components. You can nest these components like you would nest HTML tags, which makes is easy to write JSX since it resembles markup.
@@ -440,6 +444,6 @@ It works! 🎉 Instead of manually having to set the `name` attribute on every `
 
 ## Summary
 
-Children make React components feel like markup instead of disjoint entities. Using the power of JavaScript and some React helper functions we can work with them to create declarative APIs and make our lives easier.
+Children make React components feel like markup instead of disjointed entities. Using the power of JavaScript and some React helper functions we can work with them to create declarative APIs and make our lives easier.
 
 <small class="footnote">Thanks to [Karl Horky](https://twitter.com/karlhorky){:target="_blank"} and [Jake Trent](http://jaketrent.com/post/send-props-to-children-react/){:target="_blank"}.</small>
