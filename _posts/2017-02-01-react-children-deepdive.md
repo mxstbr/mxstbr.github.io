@@ -4,7 +4,24 @@ hidden: true
 title: "A deep dive into children in React"
 ---
 
-TK introduction
+The core of React is components. You can nest these components like you would nest HTML tags, which makes is easy to write JSX since it resembles markup.
+
+When I first started learning React, I thought "Put `this.props.children` everywhere, and that's all there is to know about children". Boy, was I wrong.
+
+Because we're working with JavaScript, we can manipulate child components. We can send special properties to them, decide if we want them to render or not and generally manipulate them to our will. Let's dig into the magic that is children in React.
+
+## Table of contents
+
+- [Child components](#child-components)
+  - [Everything can be a child](#everything-can-be-a-child)
+  - [Function as a child](#function-as-a-child)
+- [Manipulating children](#manipulating-children)
+  - [Looping over children](#looping-over-children)
+  - [Counting children](#counting-children)
+  - [Converting children to an array](#converting-children-to-an-array)
+  - [Enforcing a single child](#enforcing-a-single-child)
+
+## Child components
 
 Let's say we have a `<Grid />` component which can contain `<Row />` components. You'd use it like so:
 
@@ -47,7 +64,7 @@ No matter which children you pass to this component, it will always show "Hello 
 
 > Note: The `<h1>` in the example above (much like all the HTML primitives) does render its children, in this case 'Hello World!'.
 
-## Everything can be a child
+### Everything can be a child
 
 Children in React don't have to be components, they can be anything. For example, we can pass our `<Grid />` component from above some text as children and it'll work perfectly fine:
 
@@ -102,7 +119,7 @@ You can also mix and match multiple types of children perfectly fine:
   </a>
 </figure>
 
-### Functions as children
+### Function as a child
 
 We can pass any JavaScript expression as children. This includes functions.
 
@@ -195,7 +212,7 @@ With the `React.Children.map` function though, this is no problem whatsoever:
 </IgnoreFirstChild>
 ```
 
-### Counting the children
+### Counting children
 
 Since `this.props.children` can be any type, checking how _many_ children a component has turns out to be rather hard! Naïvely doing `this.props.children.length` would break when passed a String or a function. We'd have one child, `"Hello World!"`, but the `.length` would be reported as `12` instead!
 
@@ -231,6 +248,37 @@ It returns the number of children no matter what type they are:
 </ChildrenCounter>
 ```
 
+### Converting children to an array
+
+As a last resort, if none of the above methods fit your need, you can convert your children to an array with `React.Children.toArray`. This would be useful if you needed to e.g. sort them:
+
+```javascript
+class Sort extends React.Component {
+  render() {
+    const children = React.Children.toArray(this.props.children)
+    // Sort and render the children
+    return <p>{children.sort().join(' ')}</p>
+  }
+}
+```
+
+```javascript
+<Sort>
+  // We use expression containers to make sure our strings
+  // are passed as three children, not as one string
+  {'bananas'}{'oranges'}{'apples'}
+</Sort>
+```
+
+The above example renders the strings, but sorted:
+
+<figure>
+  <a target="_blank" href="http://www.webpackbin.com/NyE2TQhwz">
+    <img alt="apples bananas oranges" src="/img/react-children-apples-bananas-oranges.png" />
+    <figcaption><a target="_blank" href="http://www.webpackbin.com/NyE2TQhwz">(Live demo)</a></figcaption>
+  </a>
+</figure>
+
 ### Enforcing a single child
 
 If you think back to our `<Executioner />` component above, it expects only a single child to be passed, which has to be a function.
@@ -262,37 +310,6 @@ class Executioner extends React.Component {
 ```
 
 This returns the only child in `this.props.children`. If there is more than one child, it throws an error, thusly grinding the entire app to a halt—perfect to avoid lazy devs trying to mess with our component. 😎
-
-### Converting children to an array
-
-As a last resort, if none of the above methods fit your need, you can convert your children to an array with `React.Children.toArray`. This would be useful if you needed to e.g. sort them:
-
-```javascript
-class Sort extends React.Component {
-  render() {
-    const children = React.Children.toArray(this.props.children)
-    // Sort and render the children
-    return <p>{children.sort().join(' ')}</p>
-  }
-}
-```
-
-```javascript
-<Sort>
-  // We use expression containers to make sure our strings
-  // are passed as three children, not as one string
-  {'bananas'}{'oranges'}{'apples'}
-</Sort>
-```
-
-The above example renders the strings, but sorted:
-
-<figure>
-  <a target="_blank" href="http://www.webpackbin.com/NyE2TQhwz">
-    <img alt="apples bananas oranges" src="/img/react-children-apples-bananas-oranges.png" />
-    <figcaption><a target="_blank" href="http://www.webpackbin.com/NyE2TQhwz">(Live demo)</a></figcaption>
-  </a>
-</figure>
 
 ## Editing children
 

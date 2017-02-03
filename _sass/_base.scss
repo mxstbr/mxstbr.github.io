@@ -108,6 +108,12 @@ ul, ol, dl {
   padding-left: 1em;
 }
 
+ul ul,
+ol ol,
+dl dl {
+  margin-top: 0.5em;
+}
+
 li {
   margin-top: 0;
   margin-bottom: 0.5em;
