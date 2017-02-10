@@ -1,8 +1,9 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: "How to create open source projects"
 tags: open-source
+custom_excerpt: "Solve your own god damn problems."
 ---
 
 As the maintainer of a fair amount of [open source projects](https://github.com/mxstbr) I get asked frequently "How do I create my first open source project?".
