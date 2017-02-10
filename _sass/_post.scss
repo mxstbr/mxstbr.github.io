@@ -224,3 +224,18 @@
         display: none;
     }
 }
+
+.footnotes {
+  font-size: 0.8em;
+  color: $dark-grey;
+
+  &:before {
+    content: '';
+    position: relative;
+    margin: 1.5em 0;
+    border: 0;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $background-color;
+    display: block;
+  }
+}
