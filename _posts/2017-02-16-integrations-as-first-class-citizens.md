@@ -1,6 +1,6 @@
 ---
 published: true
-hidden: true
+hidden: false
 title: "Integrations as first class citizens"
 tags: atom git
 custom_excerpt: "Why I use Atom as my editor of choice, even though other editors may be faster, simpler or better."
