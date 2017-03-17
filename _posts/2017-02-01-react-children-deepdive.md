@@ -287,6 +287,8 @@ The above example renders the strings, but sorted:
   </a>
 </figure>
 
+> Note: The array returned by `React.Children.toArray` doesn't contain children from type function, only `ReactElement` or strings.
+
 ### Enforcing a single child
 
 If you think back to our `<Executioner />` component above, it expects only a single child to be passed, which has to be a function.
