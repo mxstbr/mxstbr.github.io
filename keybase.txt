@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/mxstbr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mxstbr.blog
+  * I am mxstbr (https://keybase.io/mxstbr) on keybase.
+  * I have a public key with fingerprint 78D3 829B 9CE0 7924 2C15  4E38 673F 4304 C9E3 A511
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d3a5caca0bfbb6a5f7e87d7396942b4f611d1008078c20a8bf9137b132a6e50c0a",
+      "fingerprint": "78d3829b9ce079242c154e38673f4304c9e3a511",
+      "host": "keybase.io",
+      "key_id": "673f4304c9e3a511",
+      "kid": "010181304deec28236d6ef817f5b0138a6dc46345cb59513ce46cebe45fe566358fc0a",
+      "uid": "ec4698d3f69dd4298e0dc3bffa2ce919",
+      "username": "mxstbr"
+    },
+    "service": {
+      "hostname": "mxstbr.blog",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1506873660,
+  "expire_in": 157680000,
+  "prev": "31a8a25618ec93857a5c09adda0ec45536c624d5955a577666cf0ffa8a1b907b",
+  "seqno": 25,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.74
+Comment: https://keybase.io/crypto
+
+yMNxAnicbVJtUFRVGF6WFWKtAME0DNGb0mDE3M9z790Bja8kyUCycSCn9X6cCxfW
+vdvd5VuccUbM0CK+ZorQtAEpxWBSAUEJYVOJNSNCK8SJabKQsg1xmmhwOkv5o5nO
+nzPnfZ/neZ/3Pa/7EX+D2S93Q7Jp6IeWUL/hCw2FhuyR0PhyTNTkUsxSjhXAhQva
+ZOh0WQtUGbNgOEHiMiUwkiAJuKiIIhAYhYUcK7MUD3iaFGkFEIRM4DiHs5xE4gIn
+KjxBsSJBkQKADC7hAhaLKao9F+oOXbW7kCzLyRRH8iIvQZzlSZqUCIaGFAdYSqEp
+nJZ4iIoSBCLmaU4fA5kTBSeMUzUUQw/rgr3/wT/wjRMcgTIyhBLJkRSQAVQ4glUY
+EScoTgCyRAOKZiSR4RmCkiANJChCmlEgAwDFcMo/vgsX5CAC88izAnhZpkmeg7gs
+UaKiCKQEeYL3AZ1Qtws7IULvLHG6RB2riMVQrEiVoG+svj7+k48TbVouIjp0zaVJ
+mg0l8lwuh9PiI7pKHT5kMRSt/2pYRdUuoyEiRhHUnapmxywEQkou1SdKMDjgWAoA
+PBaDJQ5Vh1bVh2BYwOHo+OrAIiRJEQInkAwgOCjxFMew6HNxXpBlAUddMgwFJEDS
+MpoKIzAsCwCQFBw1ygmEyOOsiPm6es2uYRaSQT6FXKTpVHPtgqtQh1jFwIXtJoOf
+2RCwyOjbLoM5KOTBznluBc/5Hw9c5f7pft+p+p70P746tfmlNzrbwrv23wnMP/O2
+J2a8z9bkaI3yeidWOvf7e4oPNGdNtmcMZv7YbYXri9/svv7saW80d7X2fUPdZM6K
+sr1m7+Im/ebYruvLN1lKl5Wbt5hASJQyNvhlSOzB1x/fF9NX8L039cT95c2Y4a3G
+SwGXTU+0vlA3HhyzuHmo1zNhr4rTq/f8GtR+I6Hs8O4r7u3z6a88p6V3jSSkhEQZ
+87k1YT22ikSXO2v29tKw6BcnPzUmtYzeTpz0DBxN1dNCq4XRzWHqn9FXalO2reyY
+2AJXZHcO4Ya9R94ZzzAV995xz3Wt6Y+MwJSalmOZ/mrZBqE/uCWwckpfl3Q0xzlX
+0zPtNGTd3bTq9x2Dxqmzh3KSPgtwJ19riHYFHTwujG89WT1b9Zg3+6OatLbaQ+3J
+puGiPY1p6U35dcfmjQkzSTVrHdElprZnlkybl47vPh05Fr8xdf9DtmtfdN6KOHPj
+40cnM7Iv56y9lyy9t8+vNLa7uujJ1YYTjoH4vKDfBj84Mr1jWcPqpxNmHg4PWbIx
+Uhubuprf/bJnNEVmKm5+d6nx7DcFOU9dHDlJZ8zOtMSdu7ir3ltZfy8xQvuwv/fV
+A+9aJubOG+eH01tbf57JxDuqPvl81Ao6yLuTh7+tWTTaUA63tVEj8V+nrkv8pSDc
+Ro81ra/cmnT++cSUv879DVhTvFY=
+=K/Tt
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mxstbr
+
+==================================================================
