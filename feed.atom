@@ -9,7 +9,7 @@
 	<author>
 		<name>Max Stoiber</name>
 		<email>contact@mxstbr.com</email>
-		<uri>http://mxstbr.com</uri>
+		<uri>https://mxstbr.com</uri>
 	</author>
 	<logo>/social_media.png</logo>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
