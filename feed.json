@@ -15,7 +15,8 @@
             "id": "{{ post.id }}",
             "title": {{ post.title | smartify | jsonify }},
             "url": "{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}",
-            "summary": {% if post.custom_excerpt %}{{ post.custom_excerpt | smartify | jsonify }}{% else %}{{ post.excerpt | smartify | jsonify }}{% endif %},
+            "summary": {% if post.custom_excerpt %}{{ post.custom_excerpt | smartify | strip_html | jsonify }}{% else %}{{ post.excerpt | smartify | strip_html | jsonify }}{% endif %},
+            {%if post.image %}"banner_image": "{{ site.url }}/img/{{ post.image }}",{% endif %}
             "date_published": "{{ post.date }}"
         }{% unless forloop.last == true %},{% endunless %}
   {% endif %}
