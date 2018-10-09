@@ -17,6 +17,7 @@
             "url": "{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}",
             "summary": {% if post.custom_excerpt %}{{ post.custom_excerpt | smartify | strip_html | jsonify }}{% else %}{{ post.excerpt | smartify | strip_html | jsonify }}{% endif %},
             {%if post.image %}"banner_image": "{{ site.url }}/img/{{ post.image }}",{% endif %}
+            {%if post.external_site %}"_external-site": "{{ post.external_site }}",{% endif %}
             "date_published": "{{ post.date }}"
         }{% unless forloop.last == true %},{% endunless %}
   {% endif %}
