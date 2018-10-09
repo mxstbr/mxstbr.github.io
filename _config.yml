@@ -5,6 +5,7 @@ description: "Fresh thinking and expert tips about HTML, CSS, JavaScript and oth
 paginate: 100
 url: "https://mxstbr.blog"
 permalink: /:year/:month/:title/
+include: ['_headers']
 future: false
 defaults:
   -
