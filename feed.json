@@ -14,7 +14,6 @@
         {
             "id": "{{ post.id }}",
             "title": {{ post.title | smartify | jsonify }},
-            "content_html": {{ post.content | jsonify }},
             "url": "{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}",
             "summary": {% if post.custom_excerpt %}{{ post.custom_excerpt | smartify | jsonify }}{% else %}{{ post.excerpt | smartify | jsonify }}{% endif %},
             "date_published": "{{ post.date }}"
