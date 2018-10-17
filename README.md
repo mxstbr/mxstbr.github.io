@@ -1,6 +1,6 @@
 # `mxstbr.blog`
 
-The repository for my Jekyll–based blog, hosted on GitHub pages.
+The repository for my Jekyll–based blog.
 
 ## License
 
