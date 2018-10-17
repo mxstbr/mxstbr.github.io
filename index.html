@@ -12,12 +12,6 @@ layout: default
             {% if post.image %}
               <img class="card__image" src="{{ site.url }}/img/{{ post.image }}" />
             {% endif %}
-  					<h3 class="post-home__date" itemprop="datePublished">
-							{% include date.html date=post.date %}
-  					</h3>
-						{% if post.external_site %}
-							<p class="post-home__attribution">{{ post.external_site }}</p>
-						{% endif %}
             <h2 class="post-home__title" itemprop="headline">{{ post.title | xml_escape }}</h2>
             <p class="post-home__excerpt">
   						{% if post.custom_excerpt %}
@@ -26,6 +20,12 @@ layout: default
   							{{ post.excerpt | strip_html | strip_newlines | truncatewords: post.excerpt_words }}
   						{% endif %}
   					</p>
+  					<h3 class="post-home__date" itemprop="datePublished">
+							{% include date.html date=post.date %}
+  					</h3>
+						{% if post.external_site %}
+							<p class="post-home__attribution">{{ post.external_site }}</p>
+						{% endif %}
 						{% comment %}
 	            {% for tag in post.tags %}
 	              <h3 class="post-home__tag">#{{ tag | downcase }}</h3>

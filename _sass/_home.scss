@@ -12,19 +12,15 @@
     }
 
     &:hover &__title {
-      text-decoration-color: rgba($text-color, 1);
-      -webkit-text-decoration-color: rgba($text-color, 1);
+			text-decoration: underline;
     }
 
     &__title {
         margin-top: 0;
 				margin-bottom: 0.5em;
-        color: $text-color;
-        text-decoration: underline;
-        text-decoration-color: rgba($text-color, 0.5);
-        -webkit-text-decoration-color: rgba($text-color, 0.5);
-        transition: text-decoration-color 0.2s;
-				@include rem(font-size, 1.1);
+				color: $text-color;
+				text-decoration: none;
+				font-size: 22px;
     }
 
 		&__date,
@@ -32,8 +28,8 @@
 			@include rem(font-size, 0.9);
 			color: $light-text-color;
 			font-weight: 400;
-			margin: 0;
-			margin-bottom: 0.5em;
+			margin-top: 1em;
+			margin-bottom: 0;
 			display: inline-block;
 			@include sans;
 		}
@@ -44,7 +40,8 @@
 		}
 
 		&__excerpt {
-			color: black;
-      margin-bottom: 0;
+			color: $light-text-color;
+			margin-bottom: 0;
+			line-height: 1.3;
 		}
 }

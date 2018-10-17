@@ -2,10 +2,10 @@
 // ---------------------------------------/
 
 // Colors
-$background-color: #F6F6F6;
+$background-color: rgb(246, 247, 248);
 $light-background-color: lighten($background-color, 1);
 $text-color: #262626;
-$light-text-color: lighten($text-color, 50);
+$light-text-color: #666;
 $code-color: #bf616a;
 $very-light-grey: darken($background-color, 3);
 $light-grey: darken($background-color, 15);
@@ -14,8 +14,8 @@ $main-color: #6CC0E5;
 $dark-main-color: darken($main-color, 25);
 
 // Typography
-$serif: Georgia,Cambria,"Times New Roman",Times,serif;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$serif: $sans-serif; // Georgia,Cambria,"Times New Roman",Times,serif;
 $monospace: Consolas, monaco, monospace;
 
 // Sizes

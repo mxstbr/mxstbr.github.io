@@ -3,9 +3,10 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 p {
-    line-height: 1.6em;
+    line-height: 1.5;
     font-size: 1em;
     margin-bottom: 1.3em;
+    color: $text-color;
 }
 
 h1, h2, h3, h4 {
