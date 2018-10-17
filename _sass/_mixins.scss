@@ -11,10 +11,6 @@
 
 @mixin sans {
   font-family: $sans-serif;
-
-  html:not(.wf-active) & {
-    font-family: $fallback-sans-serif;
-    @content;
-  }
+  @content;
 }
 

@@ -1,51 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-	{% include head.html %}
-	<body itemscope itemtype="https://schema.org/Blog" class="js-has-scrolled">
-		<script>
-			/* Progressive enhancement */
-			document.body.classList.remove('js-has-scrolled')
-		</script>
-		<script>
-			WebFontConfig = {
-				google: { families: ['Source Sans Pro:400,700'] },
-				fontactive: function() {
-					localStorage.setItem('Source Sans Pro Loaded Previously', true)
-				}
-			};
+{% include head.html %}
 
-			if (!localStorage.getItem('Source Sans Pro Loaded Previously')) {
-				// First visit: Load font via webfontloader with slight FOUT
-				window.addEventListener('load', function() {
-					(function(d) {
-						var wf = d.createElement('script'), s = d.scripts[0];
-						wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
-						s.parentNode.insertBefore(wf, s);
-					})(document);
-				}, false);
-			} else {
-				// Second visit: Directly load cached font
-				var font = document.createElement('link');
-				font.rel = "stylesheet";
-				font.href = "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700";
-				font.media = "all";
-				document.body.appendChild(font);
-				document.documentElement.classList.add('wf-active')
-			}
-		</script>
-		<nav class="nav" role="navigation">
-			<ul class="wrapper wrapper--nav">
-				<li class="nav__item nav__item--left"><a href="/newsletter">Newsletter</a></li>
-				<li class="nav__item nav__item--right"><a href="http://mxstbr.com">Portfolio</a></li>
-				<li>
-					<a href="/">
-						<h1 class="nav__logo"><div class="fadein move move-lt" aria-hidden="true">&lt;</div><div class="move move-m">m</div><div class="fadeout fadeout-a">a</div><div class="move move-x">x</div><div class="fadeout fadeout-space"> </div><div class="move move-s">s</div><div class="move move-t">t</div><div class="fadeout fadeout-o">o</div><div class="fadeout fadeout-i">i</div><div class="move move-b">b</div><div class="fadeout fadeout-e">e</div><div class="move move-r">r</div><div class="fadein move move-slash" aria-hidden="true">/</div><div class="fadein move move-gt" aria-hidden="true">&gt;</div></h1>
-						<h2 class="nav__subtitle">Open Source Developer</h2>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		{{ content }}
-		{% include footer.html %}
-	</body>
+<body itemscope itemtype="https://schema.org/Blog" class="js-has-scrolled">
+	<script>
+		/* Progressive enhancement */
+		document.body.classList.remove('js-has-scrolled')
+	</script>
+	<nav class="nav" role="navigation">
+		<ul class="wrapper wrapper--nav">
+			<li class="nav__item nav__item--left"><a href="/newsletter">Newsletter</a></li>
+			<li class="nav__item nav__item--right"><a href="http://mxstbr.com">Portfolio</a></li>
+			<li>
+				<a href="/">
+					<h1 class="nav__logo">
+						<div class="fadein move move-lt" aria-hidden="true">&lt;</div><div class="move move-m">m</div><div class="fadeout fadeout-a">a</div><div class="move move-x">x</div><div class="fadeout fadeout-space"> </div><div class="move move-s">s</div><div class="move move-t">t</div><div class="fadeout fadeout-o">o</div><div class="fadeout fadeout-i">i</div><div class="move move-b">b</div><div class="fadeout fadeout-e">e</div><div class="move move-r">r</div><div class="fadein move move-slash" aria-hidden="true">/</div><div class="fadein move move-gt" aria-hidden="true">&gt;</div>
+					</h1>
+					<h2 class="nav__subtitle">Open Source Developer</h2>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	{{ content }}
+	{% include footer.html %}
+</body>
+
 </html>
