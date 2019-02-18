@@ -25,3 +25,20 @@ footer ul li {
 		}
 	}
 }
+
+.nav__notice {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 1em 0;
+	background-color: $code-color;
+	color: white;
+}
+
+.nav__notice a {
+	display: inline-block;
+	text-decoration: underline;
+	color: white;
+}
+
